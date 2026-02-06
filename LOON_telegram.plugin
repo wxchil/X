@@ -3,6 +3,7 @@
 #!author=AlbertMusk
 #!homepage=https://github.com/wxchil/X/tree/main
 #!icon=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Telegram_X.png
+#! 原作者:https://raw.githubusercontent.com/AlbertMusk/Configs/refs/heads/main/loon/plugins/telegram-interrupt/plugin/telegram-interrupt.plugin
 
 [Argument]
 POLICY_GROUP = input,"Telegram",tag=策略组名称,desc=输入telegram规则对应的策略组的名称
