@@ -1,0 +1,20 @@
+#!name=Telegram 策略切换打断
+#!desc=通过策略切换方式打断telegram的长连接，原理为获取当前telegram的策略，然后打开客户端，发现有连接时，马上将策略切换为策略组内其他策略，然后300ms后切换回之前的策略，从而实现打断连接，让telegram建立新连接，减少转圈现象。其中需要指定telegram规则对应的策略组，默认为Telegram；时间间隔默认是30s，通知默认开启。目前支持telegram、turrit、swiftgram、iMe客户端，其他客户端待定补充。
+#!author=AlbertMusk
+#!homepage=https://github.com/wxchil/X/tree/main
+#!icon=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Telegram_X.png
+
+[Argument]
+POLICY_GROUP = input,"Telegram",tag=策略组名称,desc=输入telegram规则对应的策略组的名称
+INTERRUPT_INTETVAL = input, 300, tag=打断时间间隔,desc=切回后台多少秒之后打开会打断请求，建议30s以上，防止频繁打断
+ENABLE_NOTIFY = switch,true,tag=开启通知,desc=开始后每次打断都会推送通知
+SELECTED_REJECT = switch,false,tag=开启reject,desc=开启后切换策略为REJECT，而不是策略组中的其他节点，防止ip乱跳
+
+[Script]
+http-response ^https:\/\/api\.swiftgram\.app script-path=https://raw.githubusercontent.com/wxchil/X/refs/heads/main/telegram_interrupt.js, requires-body=false, timeout=5, tag=TGPolicyInterrupt,argument=[{INTERRUPT_INTETVAL},{ENABLE_NOTIFY},{policyName},{SELECTED_REJECT}]
+http-response ^https:\/\/api\.imem\.app script-path=https://raw.githubusercontent.com/wxchil/X/refs/heads/main/telegram_interrupt.js, requires-body=false, timeout=5, tag=TGPolicyInterrupt,argument=[{INTERRUPT_INTETVAL},{ENABLE_NOTIFY},{policyName},{SELECTED_REJECT}]
+http-response ^https:\/\/api\.telegram\.org script-path=https://raw.githubusercontent.com/wxchil/X/refs/heads/main/telegram_interrupt.js, requires-body=false, timeout=5, tag=TGPolicyInterrupt,argument=[{INTERRUPT_INTETVAL},{ENABLE_NOTIFY},{policyName},{SELECTED_REJECT}]
+http-response ^https:\/\/api\.turrit\.org script-path=https://raw.githubusercontent.com/wxchil/X/refs/heads/main/telegram_interrupt.js, requires-body=false, timeout=5, tag=TGPolicyInterrupt,argument=[{INTERRUPT_INTETVAL},{ENABLE_NOTIFY},{policyName},{SELECTED_REJECT}]
+
+[mitm]
+hostname = api.swiftgram.app,api.imem.app,api.telegram.org,api.turrit.org
