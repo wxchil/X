@@ -1,12 +1,24 @@
-/**
- * Telegram Swiftgram 长连接打断脚本
- * REJECT 优先，不存在则通知并降级
- */
+console.log("[TG] 脚本启动中...");
 
-const POLICY_GROUP = $argument.POLICY_GROUP || "Telegram";
-const INTERRUPT_INTERVAL = $argument.INTERRUPT_INTERVAL || 30;
-const ENABLE_NOTIFY = $argument.ENABLE_NOTIFY;
-const SELECTED_REJECT = $argument.SELECTED_REJECT;
+let arg = {};
+if (typeof $argument !== "undefined" && $argument !== null) {
+    try {
+        arg = (typeof $argument === "string") ? JSON.parse($argument) : $argument;
+        console.log("[TG] 参数解析成功");
+    } catch (e) {
+        console.log("[TG] 参数 JSON 解析失败，尝试按对象处理一次");
+        arg = $argument;
+    }
+} else {
+    console.log("[TG] 未获取到 $argument，使用默认值");
+}
+
+const POLICY_GROUP = arg.POLICY_GROUP || "Telegram";
+const INTERRUPT_INTERVAL = arg.INTERRUPT_INTERVAL || 30;
+const ENABLE_NOTIFY = arg.ENABLE_NOTIFY;
+const SELECTED_REJECT = arg.SELECTED_REJECT;
+
+console.log(`[TG] 配置: 策略组=${POLICY_GROUP}, 冷却=${INTERRUPT_INTERVAL}s, 通知=${ENABLE_NOTIFY}, REJECT模式=${SELECTED_REJECT}`);
 
 const now = Math.floor(Date.now() / 1000);
 
@@ -15,7 +27,7 @@ let last = $persistentStore.read("tg_policy_last_interrupt");
 last = last ? parseInt(last) : 0;
 
 if (now - last < INTERRUPT_INTERVAL) {
-    console.log(`[TG] 跳过策略切换 (${now - last}s / ${INTERRUPT_INTERVAL}s)`);
+    console.log(`[TG] 跳过策略切换: 剩余冷却时间 ${now - last}s`);
     $done({});
     return;
 }
