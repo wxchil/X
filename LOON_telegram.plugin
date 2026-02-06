@@ -1,16 +1,16 @@
 #!name=Telegram 策略切换打断
 #!desc=通过策略切换方式打断telegram的长连接。
-#!update=2026-02-06 10:10:44
+#!update=2026-02-06 10:18:00
 #!author=AlbertMusk
 #!homepage=https://github.com/wxchil/X/tree/main
 #!icon=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Telegram_X.png
 #!原作者:https://raw.githubusercontent.com/AlbertMusk/Configs/refs/heads/main/loon/plugins/telegram-interrupt/plugin/telegram-interrupt.plugin
 
 [Argument]
-POLICY_GROUP = input,"策略_Telegram_媒体",tag=策略组名称,desc=输入telegram规则对应的策略组的名称
+POLICY_GROUP = input,"策略_Telegram_通信",tag=策略组名称,desc=输入telegram规则对应的策略组的名称
 INTERRUPT_INTERVAL = input, 30, tag=打断时间间隔,desc=切回后台多少秒之后打开会打断请求，建议30s以上，防止频繁打断
 ENABLE_NOTIFY = switch,true,tag=开启通知,desc=开始后每次打断都会推送通知
-SELECTED_REJECT = switch,false,tag=开启reject,desc=开启后切换策略为REJECT，而不是策略组中的其他节点，防止ip乱跳
+SELECTED_REJECT = switch,true,tag=开启reject,desc=开启后切换策略为REJECT，而不是策略组中的其他节点，防止ip乱跳
 
 [Script]
 http-response ^https:\/\/api\.swiftgram\.app script-path=telegram_interrupt.js, requires-body=false, timeout=5, tag=TGPolicyInterrupt,argument={"POLICY_GROUP":"{POLICY_GROUP}","INTERRUPT_INTERVAL":{INTERRUPT_INTERVAL},"ENABLE_NOTIFY":{ENABLE_NOTIFY},"SELECTED_REJECT":{SELECTED_REJECT}}
