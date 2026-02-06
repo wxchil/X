@@ -16,6 +16,7 @@ http-response ^https:\/\/api\.swiftgram\.app script-path=https://raw.githubuserc
 http-response ^https:\/\/api\.imem\.app script-path=https://raw.githubusercontent.com/wxchil/X/refs/heads/main/telegram_interrupt.js, requires-body=false, timeout=5, tag=TGPolicyInterrupt,argument=[{INTERRUPT_INTETVAL},{ENABLE_NOTIFY},{policyName},{SELECTED_REJECT}]
 http-response ^https:\/\/api\.telegram\.org script-path=https://raw.githubusercontent.com/wxchil/X/refs/heads/main/telegram_interrupt.js, requires-body=false, timeout=5, tag=TGPolicyInterrupt,argument=[{INTERRUPT_INTETVAL},{ENABLE_NOTIFY},{policyName},{SELECTED_REJECT}]
 http-response ^https:\/\/api\.turrit\.org script-path=https://raw.githubusercontent.com/wxchil/X/refs/heads/main/telegram_interrupt.js, requires-body=false, timeout=5, tag=TGPolicyInterrupt,argument=[{INTERRUPT_INTETVAL},{ENABLE_NOTIFY},{policyName},{SELECTED_REJECT}]
+http-response ^https:\/\/api\.iturrit\.com script-path=https://raw.githubusercontent.com/wxchil/X/refs/heads/main/telegram_interrupt.js, requires-body=false, timeout=5, tag=TGPolicyInterrupt,argument=[{INTERRUPT_INTETVAL},{ENABLE_NOTIFY},{policyName},{SELECTED_REJECT}]
 
 [mitm]
-hostname = api.swiftgram.app,api.imem.app,api.telegram.org,api.turrit.org
+hostname = api.swiftgram.app,api.imem.app,api.telegram.org,api.turrit.org,api.iturrit.com
