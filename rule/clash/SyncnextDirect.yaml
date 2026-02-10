@@ -6,6 +6,7 @@ payload:
   - DOMAIN-WILDCARD,cloudcube.*.cn
   - DOMAIN-WILDCARD,*telecom*.mini189.cn
   - DOMAIN-WILDCARD,cloud*telecom*com
+  - DOMAIN-WILDCARD,ctyun*.cn
   - DOMAIN-SUFFIX,cloud.189.cn
   - DOMAIN-WILDCARD,*cloud.dlife.cn
   - DOMAIN-SUFFIX,ux.21cn.com
@@ -26,7 +27,6 @@ payload:
   - DOMAIN-SUFFIX,mixpanel.com
   - DOMAIN-SUFFIX,appsflyer.com
   - DOMAIN-SUFFIX,tv.apple.com
-  - DOMAIN-SUFFIX,ctyunxs.cn
   - DOMAIN-SUFFIX,hls.aoxtv.com
   - DOMAIN-KEYWORD,ffzy-play
   - DOMAIN-KEYWORD,bfzycdn.com
