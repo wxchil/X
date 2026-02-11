@@ -13,12 +13,14 @@ payload:
   #- IP-CIDR,185.76.151.0/24,no-resolve
   #- IP-CIDR6,2001:67c:4e8::/48,no-resolve
   #- IP-CIDR6,2a0a:f280:203::/48,no-resolve
-  #用于追踪日志的
-  #- DOMAIN,o1098464.ingest.sentry.io
+  # 用于追踪日志的
   - DOMAIN-SUFFIX,sentry.io
-  #vscode总是访问169.254.169.254
+  - DOMAIN-SUFFIX,scorecardresearch.com
+  # vscode总是访问169.254.169.254
   - IP-CIDR,169.254.169.254/32,no-resolve
-  #农行代理检测
+  # 农行代理检测
   - DOMAIN,msmp.abchina.com.cn
   # 秀人网弹标签页
   - DOMAIN,s.pemsrv.com
+  # Edge相关
+  - DOMAIN-SUFFIX,nelreports.net
