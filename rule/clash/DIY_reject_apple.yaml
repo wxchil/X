@@ -17,7 +17,7 @@ payload:
   - DOMAIN,swcdn.g.aaplimg.com
   - DOMAIN,swscan.apple.com
   - DOMAIN,bpapi.apple.com
-  - DOMAIN,xp.itunes-apple.com.akadns.net
+  #- DOMAIN,xp.itunes-apple.com.akadns.net
 
   - DOMAIN-WILDCARD,xp*.apple*com
   - DOMAIN-WILDCARD,mesu*.apple*com
