@@ -19,7 +19,7 @@ payload:
   - DOMAIN,bpapi.apple.com
   #- DOMAIN,xp.itunes-apple.com.akadns.net
 
-  - DOMAIN-WILDCARD,xp*.apple*com
+  #- DOMAIN-WILDCARD,xp*.apple*com
   - DOMAIN-WILDCARD,mesu*.apple*com
   - DOMAIN-WILDCARD,gg*.apple*com
   - DOMAIN-WILDCARD,appldnld*.apple*com
