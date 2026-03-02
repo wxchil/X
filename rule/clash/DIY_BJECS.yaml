@@ -1,0 +1,12 @@
+payload:
+  - DOMAIN-SUFFIX,icloud-content.com.cn
+  - DOMAIN-SUFFIX,fe.apple-dns.cn
+  - DOMAIN-WILDCARD,*contacts.icloud.com.cn
+  - DOMAIN-WILDCARD,*caldav.icloud.com.cn
+  - DOMAIN-WILDCARD,*quota.icloud.com.cn
+  - DOMAIN-WILDCARD,*fmip.icloud.com.cn
+  - DOMAIN-WILDCARD,*fmfmobile.icloud.com.cn
+  - DOMAIN-WILDCARD,*quota.icloud.com.cn
+  - DOMAIN-WILDCARD,*fmf.icloud.com.cn
+  - DOMAIN-WILDCARD,*acsegateway.icloud.com.cn
+  - DOMAIN-WILDCARD,*escrowproxy.icloud.com.cn
