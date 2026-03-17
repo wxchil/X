@@ -10,7 +10,7 @@
 http-response ^https:\/\/api\.swiftgram\.app script-path=telegram_interrupt.js, requires-body=false, timeout=5, tag=TGPolicyInterrupt
 http-response ^https:\/\/api\.imem\.app script-path=telegram_interrupt.js, requires-body=false, timeout=5, tag=TGPolicyInterrupt
 http-response ^https:\/\/api\.telegram\.org script-path=telegram_interrupt.js, requires-body=false, timeout=5, tag=TGPolicyInterrupt
-http-response ^https:\/\/api\.turrit\.org script-path=telegram_interrupt.js, requires-body=false, timeout=5, tag=TGPolicyInterrupt
+http-response ^https:\/\/api\.turrit\.org\/action script-path=telegram_interrupt.js, requires-body=false, timeout=5, tag=TGPolicyInterrupt
 http-response ^https:\/\/api\.iturrit\.com\/action script-path=telegram_interrupt.js, requires-body=false, timeout=5, tag=TGPolicyInterrupt
 
 [mitm]
