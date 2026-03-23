@@ -24,3 +24,6 @@ payload:
   - DOMAIN,s.pemsrv.com
   # Edge相关
   - DOMAIN-SUFFIX,nelreports.net
+  # WeChat UDP视频/传输等业务
+  - AND,((IP-ASN,139341,no-resolve),(NETWORK,UDP,no-resolve),(DST-PORT,3000-3004/8000-8001,no-resolve),no-resolve)
+  - AND,((IP-ASN,132203,no-resolve),(NETWORK,UDP,no-resolve),(DST-PORT,3000-3004/8000-8001,no-resolve),no-resolve)
