@@ -18,21 +18,7 @@ payload:
   - DOMAIN,bpapi.apple.com
   
   - DOMAIN,updates-http.cdn-apple.com
-  - DOMAIN,xp.apple.com.alikunlun.com
-  - DOMAIN,gdmf.apple.com.alikunlun.com
-  - DOMAIN,mesu.apple.com.alikunlun.com
-  - DOMAIN,gg.apple.com.alikunlun.com
-  - DOMAIN,appldnld.apple.com.alikunlun.com
-  - DOMAIN,ns.itunes.apple.com.alikunlun.com
-  - DOMAIN,updates.cdn-apple.com.alikunlun.com
-  - DOMAIN,ocsp.apple.com.alikunlun.com
-  - DOMAIN,ocsp2.apple.com.alikunlun.com
-  - DOMAIN,swdist.apple.com.alikunlun.com
-  - DOMAIN,swcdn.apple.com.alikunlun.com
-  - DOMAIN,swcdn.g.aaplimg.com.alikunlun.com
-  - DOMAIN,swscan.apple.com.alikunlun.com
-  - DOMAIN,bpapi.apple.com.alikunlun.com
-  
+
   - DOMAIN,updates.g.aaplimg.com
   - DOMAIN,xp.itunes-apple.com.akadns.net
 
