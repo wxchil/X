@@ -19,8 +19,8 @@ payload:
   
   - DOMAIN,updates-http.cdn-apple.com
 
-  - DOMAIN,updates.g.aaplimg.com
-  - DOMAIN,xp.itunes-apple.com.akadns.net
+  #- DOMAIN,updates.g.aaplimg.com
+  #- DOMAIN,xp.itunes-apple.com.akadns.net
 
   - DOMAIN-WILDCARD,xp*.apple*com
   - DOMAIN-WILDCARD,mesu*.apple*com
