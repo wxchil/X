@@ -8,8 +8,8 @@ payload:
   - DOMAIN-WILDCARD,cloud*telecom*com
   - DOMAIN-WILDCARD,*ctyun*.cn
   - DOMAIN-WILDCARD,*ctyunapi*.cn
-  - DOMAIN-SUFFIX,cloud.189.cn
   - DOMAIN-WILDCARD,*cloud.dlife.cn
+  - DOMAIN-WILDCARD,*cloud*189.cn  
   - DOMAIN-WILDCARD,*upload*189*.cn
   - DOMAIN-SUFFIX,ux.21cn.com
   - DOMAIN-SUFFIX,v1.ax
