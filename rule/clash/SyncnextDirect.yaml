@@ -3,14 +3,14 @@
 payload:
   #- DOMAIN-REGEX,^cloudcube.*\.com$ #只是.cn
   #- DOMAIN-WILDCARD,cloudcube.*.com #只是.cn
-  - DOMAIN-WILDCARD,cloudcube.*.cn
-  - DOMAIN-WILDCARD,*telecom*.mini189.cn
-  - DOMAIN-WILDCARD,cloud*telecom*com
-  - DOMAIN-WILDCARD,*ctyun*.cn
-  - DOMAIN-WILDCARD,*ctyunapi*.cn
-  - DOMAIN-WILDCARD,*cloud.dlife.cn
-  - DOMAIN-WILDCARD,*cloud*189.cn  
-  - DOMAIN-WILDCARD,*upload*189*cn
+  - DOMAIN-REGEX,.*cloudcube.*\.cn$
+  - DOMAIN-REGEX,.*telecom.*mini189.*\.cn$
+  - DOMAIN-REGEX,.*cloud.*telecom.*\.com$
+  - DOMAIN-REGEX,.*ctyun.*.\.cn$
+  - DOMAIN-REGEX,.*ctyunapi.*\.cn$
+  - DOMAIN-REGEX,.*cloud.*dlife.*\.cn$
+  - DOMAIN-REGEX,.*cloud.*189.*\.cn$
+  - DOMAIN-REGEX,.*upload.*189.*\.cn$
   - DOMAIN-SUFFIX,ux.21cn.com
   - DOMAIN-SUFFIX,v1.ax
   - IP-CIDR,216.180.0.0/16,no-resolve
