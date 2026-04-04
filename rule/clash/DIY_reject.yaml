@@ -93,6 +93,7 @@ payload:
   - IP-CIDR,79.136.145.175/32,no-resolve
   #Other
   - DOMAIN-SUFFIX,hao123.com
+  - DOMAIN,c.kuaiduizuoye.com # 快对
   - DOMAIN-SUFFIX,toblog.ctobsnssdk.com # 添加可能会影响快对的访问
   - DOMAIN,s.pemsrv.com # 秀人网点击会弹出AD网址
   - DOMAIN-SUFFIX,ingest.sentry.io
