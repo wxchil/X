@@ -1,4 +1,65 @@
 payload:
+  # 常见HTTPDNS
+  - DOMAIN-WILDCARD,*dns*wechat*com*
+  - DOMAIN-WILDCARD,*dns*weixin*qq*com*
+  - DOMAIN-WILDCARD,*httpdns*,no-resolve
+  - DOMAIN-WILDCARD,*dns.baidu.com,no-resolve
+  - DOMAIN-WILDCARD,dns.weixin.qq.com*,no-resolve
+  - DOMAIN-WILDCARD,dns*jd*com,no-resolve
+  - DOMAIN-WILDCARD,dns*weibo*cn,no-resolve
+  - IP-CIDR,101.124.19.122/32,no-resolve
+  - IP-CIDR,101.91.140.124/32,no-resolve
+  - IP-CIDR,101.91.140.224/32,no-resolve
+  - IP-CIDR,103.224.222.208/32,no-resolve
+  - IP-CIDR,112.64.218.119/32,no-resolve
+  - IP-CIDR,112.65.200.117/32,no-resolve
+  - IP-CIDR,114.116.215.110/32,no-resolve
+  - IP-CIDR,115.236.121.195/32,no-resolve
+  - IP-CIDR,115.236.121.51/32,no-resolve
+  - IP-CIDR,116.63.10.135/32,no-resolve
+  - IP-CIDR,116.63.10.31/32,no-resolve
+  - IP-CIDR,117.144.238.29/32,no-resolve
+  - IP-CIDR,117.185.228.108/32,no-resolve
+  - IP-CIDR,118.89.204.198/32,no-resolve
+  - IP-CIDR,119.29.29.98/32,no-resolve
+  - IP-CIDR,119.29.29.99/32,no-resolve
+  - IP-CIDR,120.46.169.234/32,no-resolve
+  - IP-CIDR,121.36.72.124/32,no-resolve
+  - IP-CIDR,122.9.13.79/32,no-resolve
+  - IP-CIDR,122.9.15.129/32,no-resolve
+  - IP-CIDR,122.9.7.134/32,no-resolve
+  - IP-CIDR,123.151.54.50/32,no-resolve
+  - IP-CIDR,180.76.76.200/32,no-resolve
+  - IP-CIDR,182.254.116.117/32,no-resolve
+  - IP-CIDR,182.254.118.119/32,no-resolve
+  - IP-CIDR,202.90.108.13/32,no-resolve
+  - IP-CIDR,202.90.110.46/32,no-resolve
+  - IP-CIDR,203.107.1.0/24,no-resolve
+  - IP-CIDR,39.97.128.148/32,no-resolve
+  - IP-CIDR,39.97.130.51/32,no-resolve
+  - IP-CIDR,42.187.182.106/32,no-resolve
+  - IP-CIDR,42.187.182.123/32,no-resolve
+  - IP-CIDR,42.187.184.154/32,no-resolve
+  - IP-CIDR,42.81.232.18/32,no-resolve
+  - IP-CIDR,47.100.123.169/32,no-resolve
+  - IP-CIDR,47.101.175.206/32,no-resolve
+  - IP-CIDR,59.111.239.61/32,no-resolve
+  - IP-CIDR,59.111.239.62/32,no-resolve
+  - IP-CIDR6,2402:4e00:1200:ed00:0:9089:6dac:96b6/128,no-resolve
+  - IP-CIDR6,2402:4e00:1900:1700:0:9554:1ad9:c3a/128,no-resolve
+  - IP-CIDR6,2402:db40:5100:1011::5/128,no-resolve
+  - IP-CIDR6,240e:928:1400:10::25/128,no-resolve  
+  # 用于追踪日志的
+  - DOMAIN-SUFFIX,sentry.io
+  - DOMAIN-SUFFIX,scorecardresearch.com  
+  # 农行代理检测
+  - DOMAIN,msmp.abchina.com.cn
+  # 秀人网弹标签页
+  - DOMAIN,s.pemsrv.com
+  # Edge相关
+  - DOMAIN-SUFFIX,nelreports.net
+  
+  
   #telegram减少转圈(效果未知)
   - IP-CIDR,95.161.76.100/31,no-resolve
   #telegram_EU
@@ -13,23 +74,11 @@ payload:
   #- IP-CIDR,185.76.151.0/24,no-resolve
   #- IP-CIDR6,2001:67c:4e8::/48,no-resolve
   #- IP-CIDR6,2a0a:f280:203::/48,no-resolve
-  # 用于追踪日志的
-  - DOMAIN-SUFFIX,sentry.io
-  - DOMAIN-SUFFIX,scorecardresearch.com
   # vscode总是访问169.254.169.254
   - IP-CIDR,169.254.169.254/32,no-resolve
-  # 农行代理检测
-  - DOMAIN,msmp.abchina.com.cn
-  # 秀人网弹标签页
-  - DOMAIN,s.pemsrv.com
-  # Edge相关
-  - DOMAIN-SUFFIX,nelreports.net
   # WeChat UDP视频/传输等业务
   - AND,((IP-ASN,139341,no-resolve),(NETWORK,UDP,no-resolve),(DST-PORT,3000-3004/8000-8001,no-resolve),no-resolve)
   - AND,((IP-ASN,132203,no-resolve),(NETWORK,UDP,no-resolve),(DST-PORT,3000-3004/8000-8001,no-resolve),no-resolve)
   # WeChat IPV6
   - AND,((IP-ASN,139341,no-resolve),(IP-CIDR6,::/0,no-resolve),no-resolve)
   - AND,((IP-ASN,132203,no-resolve),(IP-CIDR6,::/0,no-resolve),no-resolve)  
-  # 腾讯HTTPDNS
-  - DOMAIN-WILDCARD,*dns*wechat*com*
-  - DOMAIN-WILDCARD,*dns*weixin*qq*com*
