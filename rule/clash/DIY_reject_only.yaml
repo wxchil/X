@@ -67,6 +67,7 @@ payload:
   - IP-CIDR,95.161.76.100/31,no-resolve
   #telegram_EU
   - IP-CIDR,5.28.192.0/18,no-resolve
+  - IP-CIDR,194.221.61.0/18,no-resolve
   - IP-CIDR,91.105.192.0/23,no-resolve
   - IP-CIDR,91.108.4.0/22,no-resolve
   - IP-CIDR,91.108.8.0/22,no-resolve
