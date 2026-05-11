@@ -250,6 +250,8 @@ payload:
   - DOMAIN-SUFFIX,music.httpdns.c.163.com
   - DOMAIN-SUFFIX,httpdns.yunxindns.com
   - DOMAIN-SUFFIX,lofter.httpdns.c.163.com
+  # 听友fm
+  - DOMAIN,ad.tingyou.app
   #公共HTTP_DNS
   - DOMAIN-SUFFIX,httpdns.c.cdnhwc2.com
   - DOMAIN-SUFFIX,httpdns.pro
