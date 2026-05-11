@@ -86,3 +86,49 @@ payload:
   # WeChat IPV6
   - AND,((IP-ASN,139341,no-resolve),(IP-CIDR6,::/0,no-resolve),no-resolve)
   - AND,((IP-ASN,132203,no-resolve),(IP-CIDR6,::/0,no-resolve),no-resolve)  
+  # 腾讯广点通体系
+  - DOMAIN-SUFFIX,gdtimg.com
+  - DOMAIN-SUFFIX,ugdtimg.com
+
+  # 个推推送与追踪体系
+  - DOMAIN-SUFFIX,getui.com
+  - DOMAIN-SUFFIX,getui.net
+
+  # 国内知名追踪分析平台 (秒针、诸葛IO、GrowingIO)
+  - DOMAIN-SUFFIX,growingio.com
+  - DOMAIN-SUFFIX,giocdn.com
+  - DOMAIN-SUFFIX,miaozhen.com
+  - DOMAIN-SUFFIX,zhugeapi.com
+  - DOMAIN-SUFFIX,zhugeio.com
+
+  # 广告聚合与归因 (TopOn, Adjust, Effirst)
+  - DOMAIN-SUFFIX,adjust.io
+  - DOMAIN-SUFFIX,adjust.world
+  - DOMAIN-SUFFIX,anythinktech.com
+  - DOMAIN-SUFFIX,effirst.com
+  - DOMAIN-SUFFIX,toponad.com
+
+  # 海外广告、追踪器与遥测
+  - DOMAIN-SUFFIX,ad.gt
+  - DOMAIN-SUFFIX,admobile.top
+  - DOMAIN-SUFFIX,adxvip.com
+  - DOMAIN-SUFFIX,brg0.com
+  - DOMAIN-SUFFIX,btloader.com
+  - DOMAIN-SUFFIX,bugsnag.com
+  - DOMAIN-SUFFIX,cellrebel.com
+  - DOMAIN-SUFFIX,clmgo.me
+  - DOMAIN-SUFFIX,confiant-integrations.net
+  - DOMAIN-SUFFIX,gumgum.com
+  - DOMAIN-SUFFIX,id5-sync.com
+  - DOMAIN-SUFFIX,internetwarriors.net
+  - DOMAIN-SUFFIX,mg64.net
+  - DOMAIN-SUFFIX,msclm.net
+  - DOMAIN-SUFFIX,privacymanager.io
+  - DOMAIN-SUFFIX,pro-market.net
+  - DOMAIN-SUFFIX,rlcdn.com
+  - DOMAIN-SUFFIX,rtbasia.com
+  - DOMAIN-SUFFIX,rubiconproject.com
+  - DOMAIN-SUFFIX,sprig.com
+  - DOMAIN-SUFFIX,transifex.net
+  - DOMAIN-SUFFIX,usrpubtrk.com
+  - DOMAIN-SUFFIX,wikia-services.com
