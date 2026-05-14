@@ -298,8 +298,6 @@ payload:
   - DOMAIN-SUFFIX,sdkauth.hpplay.cn
   - DOMAIN-SUFFIX,vipauth.hpplay.cn
   - DOMAIN-SUFFIX,hotupgrade.hpplay.cn
-  #飞牛NAS更新
-  - DOMAIN-SUFFIX,liveupdate.fnnas.com
   #lanlan_mac未知UDP高位端口链接
   - IP-CIDR,122.225.66.0/24,no-resolve
   #Youtube
