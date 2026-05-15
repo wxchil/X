@@ -15093,13 +15093,15 @@ payload:
   - DOMAIN,speedtestph.liquidtelecom.co.zw
   - DOMAIN,speedtest2.telone.co.zw
   - DOMAIN,speedtest3.telone.co.zw
-  - IP-CIDR,122.2.174.30/32, no-resolve
-  - IP-CIDR,119.92.238.98/32, no-resolve
-  - IP-CIDR,119.92.238.90/32, no-resolve
-  - IP-CIDR,119.92.238.50/32, no-resolve
-  - IP-CIDR,119.92.223.221/32, no-resolve
-  - IP-CIDR,119.92.223.206/32, no-resolve
-  - IP-CIDR,119.92.223.158/32, no-resolve
-  - IP-CIDR,74.85.229.3/32, no-resolve
-  - IP-CIDR,62.4.62.62/32, no-resolve
-  - IP-CIDR,41.79.227.133/32, no-resolve
+  - IP-CIDR,122.2.174.30/32,no-resolve
+  - IP-CIDR,119.92.238.98/32,no-resolve
+  - IP-CIDR,119.92.238.90/32,no-resolve
+  - IP-CIDR,119.92.238.50/32,no-resolve
+  - IP-CIDR,119.92.223.221/32,no-resolve
+  - IP-CIDR,119.92.223.206/32,no-resolve
+  - IP-CIDR,119.92.223.158/32,no-resolve
+  - IP-CIDR,74.85.229.3/32,no-resolve
+  - IP-CIDR,62.4.62.62/32,no-resolve
+  - IP-CIDR,41.79.227.133/32,no-resolve
+  # 临时BT的IP
+  - IP-CIDR,134.19.179.203,no-resolve
