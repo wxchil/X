@@ -15104,4 +15104,4 @@ payload:
   - IP-CIDR,62.4.62.62/32,no-resolve
   - IP-CIDR,41.79.227.133/32,no-resolve
   # 临时BT的IP
-  - IP-CIDR,134.19.179.203,no-resolve
+  - IP-CIDR,134.19.179.203/32,no-resolve
