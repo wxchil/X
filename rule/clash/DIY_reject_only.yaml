@@ -61,7 +61,8 @@ payload:
   - DOMAIN,s.pemsrv.com
   # Edge相关
   - DOMAIN-SUFFIX,nelreports.net
-  
+  # 防止infuse使用质量差的片头片尾
+  - DOMAIN-SUFFIX,introdb.app
   
   #telegram减少转圈(效果未知)
   - IP-CIDR,95.161.76.100/31,no-resolve
