@@ -227,8 +227,8 @@ payload:
   - DOMAIN,tnc3-aliec2.snssdk.com
   - DOMAIN,is.snssdk.com
   - DOMAIN,v6-novelapp.ixigua.com
-  - DOMAIN,*novelapp.ixigua.com
-  - DOMAIN,*default.ixigua.com
+  - DOMAIN-WILDCARD,*novelapp.ixigua.com
+  - DOMAIN-WILDCARD,*default.ixigua.com
   - DOMAIN,msync-im1-vip6-std.easemob.com
   - DOMAIN,apd-pcdnwxlogin.teg.tencent-cloud.net
   - DOMAIN,api.iegadp.qq.com
