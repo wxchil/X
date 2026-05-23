@@ -1,34 +1,33 @@
 payload:
-  - DOMAIN,edgeservices.bing.com
-  - DOMAIN,d.docs.live.net
-  - DOMAIN,edge.microsoft.com
-  - DOMAIN,proteus-assetstore.azurewebsites.net
-  - DOMAIN,nexusrules.officeapps.live.com
-  - DOMAIN,browser.events.data.msn.cn
-  - DOMAIN,services.bingapis.com
-#以下是coplit Loon可莉维护的规则
-#https://gitlab.com/lodepuly/vpn_tool/-/raw/master/Tool/Loon/Rule/Copilot.list
+  # Microsoft 常用服务
   - DOMAIN,api.msn.com
   - DOMAIN,assets.msn.com
+  - DOMAIN,browser.events.data.msn.cn
+  - DOMAIN,d.docs.live.net
+  - DOMAIN,login.microsoftonline.com
+  - DOMAIN,nexusrules.officeapps.live.com
+  - DOMAIN,proteus-assetstore.azurewebsites.net
+
+  # Copilot 与 Bing 搜索
   - DOMAIN,copilot.microsoft.com
   - DOMAIN,dealczars.bing-shopping.microsoft-falcon.io
-  - # DOMAIN,eas.outlook.com
   - DOMAIN,edgeservices.bing.com
-  - DOMAIN,functional.events.data.microsoft.com
   - DOMAIN,gateway.bingviz.microsoftapp.net
-  - DOMAIN,gateway.bingviz.microsoftapp.net
-  - DOMAIN,location.microsoft.com
-  - DOMAIN,login.microsoftonline.com
-  - DOMAIN,proteus-assetstore.azurewebsites.net
-  - DOMAIN,self.events.data.microsoft.com
+  - DOMAIN,sapphire.api.microsoftapp.net
   - DOMAIN,services.bingapis.com
   - DOMAIN,shopping.bing-shopping.microsoft-falcon.io
-  - DOMAIN,sapphire.api.microsoftapp.net
   - DOMAIN,sr.bing.com
-  - DOMAIN,sydney.bing.com
   - DOMAIN,ssl.bing.com
+  - DOMAIN,sydney.bing.com
   - DOMAIN,th.bing.com
   - DOMAIN,www.bing.com
-  - DOMAIN,www2.bing.com
   - DOMAIN,www.bingapis.com
+  - DOMAIN,www2.bing.com
+
+  # 其它与未分类
+  - DOMAIN,edge.microsoft.com
+  - DOMAIN,functional.events.data.microsoft.com
+  - DOMAIN,location.microsoft.com
+  - DOMAIN,self.events.data.microsoft.com
   - DOMAIN-SUFFIX,edge.microsoft.com
+
