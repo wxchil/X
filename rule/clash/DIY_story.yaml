@@ -1,6 +1,8 @@
 payload:
-  #口袋故事
-  - DOMAIN-SUFFIX,koudaistory.com
+  # 口袋故事
   - DOMAIN-SUFFIX,idaddy.cn
-  #网络仓鼠
+  - DOMAIN-SUFFIX,koudaistory.com
+
+  # 网络仓鼠
   - DOMAIN-SUFFIX,hammyhome.com
+
