@@ -1,311 +1,348 @@
 payload:
-  - PROCESS-NAME-REGEX,.*Paste.*
-  - PROCESS-NAME-REGEX,.*Bartender.*
-  - PROCESS-NAME-REGEX,.*Neural.*Mix.*Pro
-  - PROCESS-NAME-REGEX,Pixelmator.*Pro
-  - PROCESS-NAME-REGEX,.*PPDuck.*
-  - PROCESS-NAME-REGEX,.*Sound.*Studio
-  - PROCESS-NAME-REGEX,.*Wondershare.*
-  - PROCESS-NAME,AdobeCRDaemon,no-resolve
-  - PROCESS-NAME,AdobeIPCBroker,no-resolve
-  - PROCESS-NAME-REGEX,.*Adobe.*Photoshop.*
-  - PROCESS-NAME-REGEX,.*Creative.*Cloud.*
   - PROCESS-NAME-REGEX,.*Adobe.*Crash.*
-  - PROCESS-NAME-REGEX,.*Microsoft.*Update.*
-  - PROCESS-NAME-REGEX,.*EdgeUpdater.*
-  - PROCESS-NAME-REGEX,.*GoogleUpdate.*
-  - PROCESS-NAME-REGEX,.*GoogleSoftwareUpdate.*
-  - PROCESS-NAME-REGEX,.*updater.exe #chrome
+  - PROCESS-NAME-REGEX,.*Adobe.*Photoshop.*
+  - PROCESS-NAME-REGEX,.*App Cleaner.*
   - PROCESS-NAME-REGEX,.*Bandicam.*
   - PROCESS-NAME-REGEX,.*Bandizip.*
-  - PROCESS-NAME-REGEX,.*XLGame.*
-  - PROCESS-NAME-REGEX,.*App Cleaner.*
+  - PROCESS-NAME-REGEX,.*Bartender.*
+  - PROCESS-NAME-REGEX,.*Creative.*Cloud.*
+  - PROCESS-NAME-REGEX,.*EdgeUpdater.*
+  - PROCESS-NAME-REGEX,.*GoogleSoftwareUpdate.*
+  - PROCESS-NAME-REGEX,.*GoogleUpdate.*
+  - PROCESS-NAME-REGEX,.*Microsoft.*Update.*
+  - PROCESS-NAME-REGEX,.*Neural.*Mix.*Pro
+  - PROCESS-NAME-REGEX,.*Paste.*
+  - PROCESS-NAME-REGEX,.*PPDuck.*
+  - PROCESS-NAME-REGEX,.*Sound.*Studio
   - PROCESS-NAME-REGEX,.*SoundSource.*
-
+  - PROCESS-NAME-REGEX,.*updater.exe #chrome
+  - PROCESS-NAME-REGEX,.*Wondershare.*
+  - PROCESS-NAME-REGEX,.*XLGame.*
+  - PROCESS-NAME-REGEX,Pixelmator.*Pro
+  - PROCESS-NAME,AdobeCRDaemon,no-resolve
+  - PROCESS-NAME,AdobeIPCBroker,no-resolve
   - AND,((PROCESS-NAME-REGEX,.*wpscloudsvr.*),(DOMAIN-SUFFIX,baidu.com,no-resolve),no-resolve)
 
-  #finalshell
+  # FinalShell 拦截
   - PROCESS-NAME,FinalShell,no-resolve
-  - IP-CIDR,58.247.214.47/32,no-resolve
-  - IP-CIDR,5.5.5.5/32,no-resolve
-  - DOMAIN-SUFFIX,updates-s3.binaryage.com
-  - DOMAIN-SUFFIX,binaryage-leechgate.herokuapp.com
-  - DOMAIN-SUFFIX,youtusoft.com
-  - DOMAIN-SUFFIX,hostbuf.com
-  - DOMAIN-SUFFIX,www.hostbuf.com
-  - DOMAIN-SUFFIX,dkys.org
-  - DOMAIN-SUFFIX,tcpspeed.com
-  - DOMAIN-SUFFIX,www.wn1998.com
-  - DOMAIN-SUFFIX,wn1998.com
-  - DOMAIN-SUFFIX,pwlt.wn1998.com
   - DOMAIN-SUFFIX,backup.www.hostbuf.com
-  #HDOBOX_AD
+  - DOMAIN-SUFFIX,binaryage-leechgate.herokuapp.com
+  - DOMAIN-SUFFIX,dkys.org
+  - DOMAIN-SUFFIX,hostbuf.com
+  - DOMAIN-SUFFIX,pwlt.wn1998.com
+  - DOMAIN-SUFFIX,tcpspeed.com
+  - DOMAIN-SUFFIX,updates-s3.binaryage.com
+  - DOMAIN-SUFFIX,wn1998.com
+  - DOMAIN-SUFFIX,www.hostbuf.com
+  - DOMAIN-SUFFIX,www.wn1998.com
+  - DOMAIN-SUFFIX,youtusoft.com
+  - IP-CIDR,5.5.5.5/32,no-resolve
+  - IP-CIDR,58.247.214.47/32,no-resolve
+
+  # HDOBox 广告拦截
   - DOMAIN-SUFFIX,applovin.com
   - DOMAIN-SUFFIX,applvn.com
   - DOMAIN-SUFFIX,doubleclick.net
-  #TIKTOK_AD
-  #- DOMAIN,ads-api.tiktok.com
-  #- DOMAIN,analytics.tiktok.com
-  #- DOMAIN,ads-sg.tiktok.com
-  #- DOMAIN,analytics-sg.tiktok.com
-  #- DOMAIN,business-api.tiktok.com
-  #- DOMAIN,ads.tiktok.com
-  #- DOMAIN,log.byteoversea.com
-  #Sogou
+
+  # TikTok 广告拦截
+  # - DOMAIN,ads-api.tiktok.com
+  # - DOMAIN,ads-sg.tiktok.com
+  # - DOMAIN,ads.tiktok.com
+  # - DOMAIN,analytics-sg.tiktok.com
+  # - DOMAIN,analytics.tiktok.com
+  # - DOMAIN,business-api.tiktok.com
+  # - DOMAIN,log.byteoversea.com
+
+  # 搜狗服务与追踪拦截
   - DOMAIN-SUFFIX,otheve.beacon.qq.com
-  #狗逼知乎
-  #- DOMAIN-REGEX,(103)\.(41)\.(167)\.(237)
-  #- DOMAIN-REGEX,(118)\.(89)\.(204)\.(198)
+
+  # 知乎广告与追踪拦截
+  # - DOMAIN-REGEX,(103)\.(41)\.(167)\.(237)
+  # - DOMAIN-REGEX,(118)\.(89)\.(204)\.(198)
   - DOMAIN-WILDCARD,103*41*167*237
   - DOMAIN-WILDCARD,118*89*204*198
   - IP-CIDR,103.41.167.237/32,no-resolve
   - IP-CIDR,118.89.204.198/32,no-resolve
   - IP-CIDR6,2402:4e00:1200:ed00:0:9089:6dac:96b6/128,no-resolve
-  #广告平台
-  - DOMAIN-SUFFIX,sigmob.cn
-  - DOMAIN-SUFFIX,etoolads.cn
-  - DOMAIN-SUFFIX,tobidad.cn
+
+  # 通用广告平台与追踪
   - DOMAIN-SUFFIX,bytescm.com
-  #PCDN
-  - DOMAIN,stun.hitv.com
+  - DOMAIN-SUFFIX,etoolads.cn
+  - DOMAIN-SUFFIX,sigmob.cn
+  - DOMAIN-SUFFIX,tobidad.cn
+
+  # PCDN 缓存与节点收集拦截
   - DOMAIN,pcdn.yximgs.com
   - DOMAIN,stun.douyucdn.cn
+  - DOMAIN,stun.hitv.com
   - DOMAIN,stun1.douyucdn.cn
-  - DOMAIN-SUFFIX,gjfzpt.cn
-  - DOMAIN-SUFFIX,szbdyd.com
   - DOMAIN-SUFFIX,bsccdn.net
+  - DOMAIN-SUFFIX,gjfzpt.cn
+  - DOMAIN-SUFFIX,jomodns.cn
+  - DOMAIN-SUFFIX,kuiniuca.com
+  - DOMAIN-SUFFIX,mcdn.bilivideo.cn
+  - DOMAIN-SUFFIX,onethingpcs.com
+  - DOMAIN-SUFFIX,p2p.huya.com
+  - DOMAIN-SUFFIX,pcdn.xmcdn.com
   - DOMAIN-SUFFIX,pkoplink.com
   - DOMAIN-SUFFIX,saxysec.com
+  - DOMAIN-SUFFIX,szbdyd.com
+  - DOMAIN-SUFFIX,tpa-hcdn.iqiyi.com
   - DOMAIN-SUFFIX,uhabo.com
   - DOMAIN-SUFFIX,xycdn.com
-  - DOMAIN-SUFFIX,kuiniuca.com
-  - DOMAIN-SUFFIX,onethingpcs.com
-  - DOMAIN-SUFFIX,jomodns.cn
-  - DOMAIN-SUFFIX,p2p.huya.com
-  - DOMAIN-SUFFIX,mcdn.bilivideo.cn
-  - DOMAIN-SUFFIX,tpa-hcdn.iqiyi.com
-  - DOMAIN-SUFFIX,pcdn.xmcdn.com
-  - DOMAIN-REGEX,.*pcdn.*biliapi\.net
-  - DOMAIN-REGEX,.*pcdn.*youku\.com
   - DOMAIN-REGEX,.*p2p.*douyucdn\.cn
   - DOMAIN-REGEX,.*p2p.*qq\.com
-  #BT/PT链接
+  - DOMAIN-REGEX,.*pcdn.*biliapi\.net
+  - DOMAIN-REGEX,.*pcdn.*youku\.com
+
+  # BT/PT 与迅雷高位端口拦截
   - IP-CIDR,79.136.145.175/32,no-resolve
-  #Other
-  - DOMAIN-SUFFIX,hao123.com
+
+  # 其它常用日本服务
   - DOMAIN,c.kuaiduizuoye.com # 快对
-  - DOMAIN-SUFFIX,toblog.ctobsnssdk.com # 添加可能会影响快对的访问
   - DOMAIN,s.pemsrv.com # 秀人网点击会弹出AD网址
+  - DOMAIN-SUFFIX,hao123.com
   - DOMAIN-SUFFIX,ingest.sentry.io
-  #widows_升级提醒
-  - DOMAIN-SUFFIX,windowsupdate.microsoft.com
-  - DOMAIN-SUFFIX,update.microsoft.com
-  - DOMAIN-SUFFIX,windowsupdate.microsoft.com
-  - DOMAIN-SUFFIX,windowsupdate.com
-  - DOMAIN-SUFFIX,wustat.windows.com
+  - DOMAIN-SUFFIX,toblog.ctobsnssdk.com # 添加可能会影响快对的访问
+
+  # Windows 系统升级提醒拦截
   - DOMAIN-SUFFIX,ntservicepack.microsoft.com
   - DOMAIN-SUFFIX,test.stats.update.microsoft.com
-  #office_升级提醒 Microsoft Auto Update
+  - DOMAIN-SUFFIX,update.microsoft.com
+  - DOMAIN-SUFFIX,windowsupdate.com
+  - DOMAIN-SUFFIX,windowsupdate.microsoft.com
+  - DOMAIN-SUFFIX,wustat.windows.com
+
+  # Office / 微软升级提醒拦截
   - DOMAIN-SUFFIX,officecdnmac.microsoft.com
-  # mxplayer_升级提醒
-  - DOMAIN-SUFFIX,mxplayer.j2inter.com
-  - DOMAIN-SUFFIX,mxplay.com
-  - DOMAIN-SUFFIX,mx.j2inter.com.lan
+
+  # MXPlayer 升级与广告拦截
   - DOMAIN-SUFFIX,mx.j2inter.com
-  #当贝
+  - DOMAIN-SUFFIX,mx.j2inter.com.lan
+  - DOMAIN-SUFFIX,mxplay.com
+  - DOMAIN-SUFFIX,mxplayer.j2inter.com
+
+  # 当贝服务与升级拦截
   - DOMAIN-SUFFIX,appsou.tvapk.com
-  - DOMAIN-SUFFIX,esmapi.dangbei.net
-  - DOMAIN-SUFFIX,up.dangbei.com
-  - DOMAIN-SUFFIX,sm.tvfuwu.com
   - DOMAIN-SUFFIX,dbidapi.tymcdn.com
-  #阿里
+  - DOMAIN-SUFFIX,esmapi.dangbei.net
+  - DOMAIN-SUFFIX,sm.tvfuwu.com
+  - DOMAIN-SUFFIX,up.dangbei.com
+
+  # 阿里服务与广告追踪拦截
   - DOMAIN-SUFFIX,httpdns.alicdn.com
-  #阿里云
+
+  # 阿里云服务与遥测拦截
   - DOMAIN-SUFFIX,adash.man.aliyuncs.com
   - DOMAIN-SUFFIX,httpdns-api.aliyuncs.com
   - DOMAIN-SUFFIX,httpdns-sc.aliyuncs.com
-  #百度
-  - DOMAIN-SUFFIX,httpsdns.baidu.com
+
+  # 百度服务与广告追踪拦截
   - DOMAIN-SUFFIX,httpdns.baidu.com
   - DOMAIN-SUFFIX,httpdns.baidubce.com
-  #哔哩哔哩
+  - DOMAIN-SUFFIX,httpsdns.baidu.com
+
+  # 哔哩哔哩服务与追踪拦截
   - DOMAIN-SUFFIX,httpdns.bilivideo.com
-  #华为
+
+  # 华为服务与遥测拦截
   - DOMAIN-SUFFIX,httpdns.c.cdnhwc2.com
-  #keep
+
+  # Keep 广告与服务拦截
   - DOMAIN-SUFFIX,httpdns.calorietech.com
-  #美团
+
+  # 美团服务与追踪拦截
   - DOMAIN-SUFFIX,httpdns.meituan.com
-  #爱奇艺
-  - DOMAIN-SUFFIX,cupid.ptqy.gitv.tv
-  - DOMAIN-SUFFIX,policy.video.ptqy.gitv.tv
+
+  # 爱奇艺广告与服务拦截
   - DOMAIN-SUFFIX,ctyuncdnct.inter.ptqy.gitv.tv
-  - DOMAIN-SUFFIX,msg.71.am
   - DOMAIN-SUFFIX,cupid.iqiyi.com
+  - DOMAIN-SUFFIX,cupid.ptqy.gitv.tv
   - DOMAIN-SUFFIX,cupid.qiyi.com
+  - DOMAIN-SUFFIX,msg.71.am
   - DOMAIN-SUFFIX,msg.iqiyi.com
-  #优酷
-  - DOMAIN-SUFFIX,ems.youku.com
-  - DOMAIN-SUFFIX,ipm.atm.youku.com
-  - DOMAIN-SUFFIX,val.atm.youku.com
-  - DOMAIN-SUFFIX,dressimage.img-cn-beijing.aliyuncs.com
-  - DOMAIN-SUFFIX,themis.ykimg.com
-  - DOMAIN-SUFFIX,cm.miaozhen.atm.youku.com
-  - DOMAIN-SUFFIX,html.atm.youku.com
-  - DOMAIN-SUFFIX,hudong.pl.youku.com
-  - DOMAIN-SUFFIX,m.yes.youku.com
-  - DOMAIN-SUFFIX,miaozhen.atm.youku.com
-  - DOMAIN-SUFFIX,player.lstat.youku.com
-  - DOMAIN-SUFFIX,static.atm.youku.com
-  - DOMAIN-SUFFIX,v.l.youku.com
-  - DOMAIN-SUFFIX,v2html.atm.youku.com
-  - DOMAIN-SUFFIX,vid.atm.youku.com
-  - DOMAIN-SUFFIX,reply.lomark.cn
-  - DOMAIN-SUFFIX,atm.cp31.ott.cibntv.net
+  - DOMAIN-SUFFIX,policy.video.ptqy.gitv.tv
+
+  # 优酷广告与服务拦截
   - DOMAIN-SUFFIX,ad.api.3g.tudou.com
   - DOMAIN-SUFFIX,ad.api.3g.youku.com
   - DOMAIN-SUFFIX,ad.api.mobile.youku.com
+  - DOMAIN-SUFFIX,atm.cp31.ott.cibntv.net
   - DOMAIN-SUFFIX,atm.youku.com
   - DOMAIN-SUFFIX,b.smartvideo.youku.com
+  - DOMAIN-SUFFIX,cm.miaozhen.atm.youku.com
   - DOMAIN-SUFFIX,dev-push.m.youku.com
   - DOMAIN-SUFFIX,dl.g.youku.com
+  - DOMAIN-SUFFIX,dressimage.img-cn-beijing.aliyuncs.com
+  - DOMAIN-SUFFIX,e.stat.ykimg.com
+  - DOMAIN-SUFFIX,ems.youku.com
   - DOMAIN-SUFFIX,gamex.mobile.youku.com
   - DOMAIN-SUFFIX,guanggaoad.youku.com
+  - DOMAIN-SUFFIX,html.atm.youku.com
   - DOMAIN-SUFFIX,hudong.pl.youku.com
+  - DOMAIN-SUFFIX,ipm.atm.youku.com
   - DOMAIN-SUFFIX,lstat.youku.com
+  - DOMAIN-SUFFIX,m.yes.youku.com
+  - DOMAIN-SUFFIX,miaozhen.atm.youku.com
   - DOMAIN-SUFFIX,mobilemsg.youku.com
+  - DOMAIN-SUFFIX,p-log.ykimg.com
   - DOMAIN-SUFFIX,passport-log.youku.com
+  - DOMAIN-SUFFIX,player.lstat.youku.com
   - DOMAIN-SUFFIX,push.m.youku.com
+  - DOMAIN-SUFFIX,reply.lomark.cn
+  - DOMAIN-SUFFIX,static.atm.youku.com
+  - DOMAIN-SUFFIX,themis.ykimg.com
+  - DOMAIN-SUFFIX,v.l.youku.com
+  - DOMAIN-SUFFIX,v2html.atm.youku.com
+  - DOMAIN-SUFFIX,val.atm.youku.com
+  - DOMAIN-SUFFIX,vid.atm.youku.com
   - DOMAIN-SUFFIX,wan.youku.com
   - DOMAIN-SUFFIX,yes.youku.com
-  - DOMAIN-SUFFIX,e.stat.ykimg.com
-  - DOMAIN-SUFFIX,p-log.ykimg.com
-  - DOMAIN-SUFFIX,themis.ykimg.com
-  #腾讯升级
+
+  # 腾讯软件升级与静默拦截
   - DOMAIN-REGEX,dldir.*\.qq\.com
-  #腾讯
+
+  # 腾讯服务与广告追踪拦截
   - DOMAIN-SUFFIX,aegis.qq.com
   - DOMAIN-SUFFIX,dns.weixin.qq.com.cn
-  #腾讯视频
-  - DOMAIN-SUFFIX,bla.gtimg.com
-  - DOMAIN-SUFFIX,ra.gtimg.com
+
+  # 腾讯视频广告拦截
   - DOMAIN-SUFFIX,adsrich.qq.com
+  - DOMAIN-SUFFIX,bla.gtimg.com
+  - DOMAIN-SUFFIX,cm.l.qq.com
+  - DOMAIN-SUFFIX,imc.l.qq.com
   - DOMAIN-SUFFIX,jqmt.qq.com
   - DOMAIN-SUFFIX,jsqmt.qq.com
-  - DOMAIN-SUFFIX,pingfore.qq.com
-  - DOMAIN-SUFFIX,pinghot.qq.com
-  - DOMAIN-SUFFIX,tj.video.qq.com
-  - DOMAIN-SUFFIX,imc.l.qq.com
   - DOMAIN-SUFFIX,livec.l.qq.com
   - DOMAIN-SUFFIX,livep.l.qq.com
   - DOMAIN-SUFFIX,lives.l.qq.com
-  - DOMAIN-SUFFIX,cm.l.qq.com
   - DOMAIN-SUFFIX,m.l.qq.com
   - DOMAIN-SUFFIX,p.l.qq.com
-  - DOMAIN-SUFFIX,x.l.qq.com
   - DOMAIN-SUFFIX,p.tencentmind.com
-  #小米
+  - DOMAIN-SUFFIX,pingfore.qq.com
+  - DOMAIN-SUFFIX,pinghot.qq.com
+  - DOMAIN-SUFFIX,ra.gtimg.com
+  - DOMAIN-SUFFIX,tj.video.qq.com
+  - DOMAIN-SUFFIX,x.l.qq.com
+
+  # 小米智能服务与广告拦截
   - DOMAIN-SUFFIX,api.ad.xiaomi.com
-  - DOMAIN-SUFFIX,tracking.miui.com
   - DOMAIN-SUFFIX,data.mistat.xiaomi.com
   - DOMAIN-SUFFIX,diagnosis.ad.xiaomi.com
   - DOMAIN-SUFFIX,log.ad.xiaomi.com
   - DOMAIN-SUFFIX,m.track.ad.xiaomi.com
   - DOMAIN-SUFFIX,sdkconfig.ad.xiaomi.com
-  #快手
-  - DOMAIN-SUFFIX,kuaishou.httpdns.pro
+  - DOMAIN-SUFFIX,tracking.miui.com
+
+  # 快手广告与服务拦截
   - DOMAIN-SUFFIX,apidns.kwd.inkuai.com
   - DOMAIN-SUFFIX,hdns.ksyun.com
-  #番茄 https://raw.githubusercontent.com/honue/rules/master/Loon/plugin/FanQieNovel.plugin
-  - DOMAIN,i.snssdk.com
-  - DOMAIN,i-lq.snssdk.com
-  - DOMAIN,dig.bdurl.net
+  - DOMAIN-SUFFIX,kuaishou.httpdns.pro
+
+  # 番茄 https://raw.githubusercontent.com/honue/rules/master/Loon/plugin/FanQieNovel.plugin
   - DOMAIN,activity-ag.awemeughun.com
-  - DOMAIN,mcs.snssdk.com
-  - DOMAIN,tnc3-alisc1.snssdk.com
-  - DOMAIN,security-lq.snssdk.com
-  - DOMAIN,tnc3-aliec2.snssdk.com
-  - DOMAIN,is.snssdk.com
-  - DOMAIN,v6-novelapp.ixigua.com
-  - DOMAIN-WILDCARD,*novelapp.ixigua.com
-  - DOMAIN-WILDCARD,*default.ixigua.com
-  - DOMAIN,msync-im1-vip6-std.easemob.com
   - DOMAIN,apd-pcdnwxlogin.teg.tencent-cloud.net
   - DOMAIN,api.iegadp.qq.com
+  - DOMAIN,dig.bdurl.net
+  - DOMAIN,i-lq.snssdk.com
+  - DOMAIN,i.snssdk.com
+  - DOMAIN,is.snssdk.com
+  - DOMAIN,mcs.snssdk.com
+  - DOMAIN,msync-im1-vip6-std.easemob.com
+  - DOMAIN,security-lq.snssdk.com
   - DOMAIN,sf3-ttcdn-tos.pstatp.com
-  - DOMAIN-SUFFIX,pglstatp-toutiao.com
-  - DOMAIN-SUFFIX,byteorge.com
-  - DOMAIN-SUFFIX,bytegoofy.com
+  - DOMAIN,tnc3-aliec2.snssdk.com
+  - DOMAIN,tnc3-alisc1.snssdk.com
+  - DOMAIN,v6-novelapp.ixigua.com
   - DOMAIN-SUFFIX,bytedance.com
-  - IP-CIDR,49.71.37.101/32,no-resolve
-  - IP-CIDR,117.71.105.23/32,no-resolve
-  - IP-CIDR,218.94.207.205/32,no-resolve
-  - IP-CIDR,117.92.229.188/32,no-resolve
+  - DOMAIN-SUFFIX,bytegoofy.com
+  - DOMAIN-SUFFIX,byteorge.com
+  - DOMAIN-SUFFIX,pglstatp-toutiao.com
+  - DOMAIN-WILDCARD,*default.ixigua.com
+  - DOMAIN-WILDCARD,*novelapp.ixigua.com
   - IP-CIDR,101.36.166.16/32,no-resolve
-  - IP-CIDR,180.96.2.114/32,no-resolve 
-  #网易
+  - IP-CIDR,117.71.105.23/32,no-resolve
+  - IP-CIDR,117.92.229.188/32,no-resolve
+  - IP-CIDR,180.96.2.114/32,no-resolve
+  - IP-CIDR,218.94.207.205/32,no-resolve
+  - IP-CIDR,49.71.37.101/32,no-resolve
+
+  # 网易服务与广告追踪拦截
   - DOMAIN-SUFFIX,httpdns-sdk.n.netease.com
-  - DOMAIN-SUFFIX,httpdns.n.netease.com
   - DOMAIN-SUFFIX,httpdns.music.163.com
-  - DOMAIN-SUFFIX,music.httpdns.c.163.com
+  - DOMAIN-SUFFIX,httpdns.n.netease.com
   - DOMAIN-SUFFIX,httpdns.yunxindns.com
   - DOMAIN-SUFFIX,lofter.httpdns.c.163.com
-  # 听友fm
+  - DOMAIN-SUFFIX,music.httpdns.c.163.com
+
+  # 听友 FM 广告拦截
   - DOMAIN,ad.tingyou.app
-  # 飞牛
+
+  # 飞牛系统更新与升级拦截
   - DOMAIN-WILDCARD,*update.fnnas.com
-  #公共HTTP_DNS
+
+  # 公共 HTTPDNS 服务拦截
   - DOMAIN-SUFFIX,httpdns.c.cdnhwc2.com
   - DOMAIN-SUFFIX,httpdns.pro
-  #hao123
+
+  # hao123 劫持与推广拦截
   - IP-CIDR,110.242.68.247/32,no-resolve
-  #XTerminal
+
+  # XTerminal 软件激活与追踪拦截
   - AND,((PROCESS-NAME-REGEX,.*XTerminal.*),(DOMAIN-SUFFIX,xterminal.cn),no-resolve)
-  #utools
+
+  # uTools 广告与更新拦截
   - PROCESS-NAME-REGEX,.*utools.*
-  #sony系统更新
+
+  # 索尼系统升级拦截
   - AND,((SRC-IP-CIDR,192.168.10.125/32,no-resolve),(DOMAIN-SUFFIX,update.biv.sony.tv,    no-resolve),no-resolve)
   - AND,((SRC-IP-CIDR,192.168.10.125/32,no-resolve),(DOMAIN-SUFFIX,api.erabu.sony.tv,     no-resolve),no-resolve)
   - AND,((SRC-IP-CIDR,192.168.10.125/32,no-resolve),(DOMAIN-SUFFIX,tv-update.sony.com.cn, no-resolve),no-resolve)
-  #sony联网网址,疑似远控或CDN
-  #- AND,((SRC-IP-CIDR,192.168.10.125/32,no-resolve),(DOMAIN-SUFFIX,sonyyk.v5tv.com,       no-resolve),no-resolve)
-  #- AND,((SRC-IP-CIDR,192.168.10.125/32,no-resolve),(DOMAIN-SUFFIX,ndmdhs.com,            no-resolve),no-resolve)
-  #sony联网地址,疑似广告(知乎/当贝)
-  #- AND,((SRC-IP-CIDR,192.168.10.125/32,no-resolve),(DOMAIN-SUFFIX,unpkg.zhimg.com,       no-resolve),no-resolve)
-  #- AND,((SRC-IP-CIDR,192.168.10.125/32,no-resolve),(DOMAIN-SUFFIX,zmapi.dangsfly.com,    no-resolve),no-resolve)
-  #乐播投屏
-  - DOMAIN-SUFFIX,www.lebo.cn
-  - DOMAIN-SUFFIX,hpplay.cdn.cibn.cc
-  - DOMAIN-SUFFIX,g.dtv.cn.miaozhen.com
-  - DOMAIN-SUFFIX,android.bugly.qq.com
+
+  # sony联网网址,疑似远控或CDN
+  # - AND,((SRC-IP-CIDR,192.168.10.125/32,no-resolve),(DOMAIN-SUFFIX,sonyyk.v5tv.com,       no-resolve),no-resolve)
+  # - AND,((SRC-IP-CIDR,192.168.10.125/32,no-resolve),(DOMAIN-SUFFIX,ndmdhs.com,            no-resolve),no-resolve)
+
+  # sony联网地址,疑似广告(知乎/当贝)
+  # - AND,((SRC-IP-CIDR,192.168.10.125/32,no-resolve),(DOMAIN-SUFFIX,unpkg.zhimg.com,       no-resolve),no-resolve)
+  # - AND,((SRC-IP-CIDR,192.168.10.125/32,no-resolve),(DOMAIN-SUFFIX,zmapi.dangsfly.com,    no-resolve),no-resolve)
+
+  # 乐播投屏 SDK 与广告拦截
   - DOMAIN-SUFFIX,519332DA.rtc.youme.im
-  - DOMAIN-SUFFIX,alog.umeng.com
-  - DOMAIN-SUFFIX,h5.hpplay.com.cn
-  - DOMAIN-SUFFIX,cdn.hpplay.com.cn
-  - DOMAIN-SUFFIX,hotupgrade.hpplay.com.cn
   - DOMAIN-SUFFIX,ad.hpplay.cn
-  - DOMAIN-SUFFIX,rp.hpplay.cn
-  - DOMAIN-SUFFIX,sl.hpplay.cn
-  - DOMAIN-SUFFIX,pin.hpplay.cn
-  - DOMAIN-SUFFIX,fix.hpplay.cn
-  - DOMAIN-SUFFIX,imdns.hpplay.cn
-  - DOMAIN-SUFFIX,image.hpplay.cn
-  - DOMAIN-SUFFIX,tvapp.hpplay.cn
-  - DOMAIN-SUFFIX,conf.hpplay.cn
-  - DOMAIN-SUFFIX,gslb.hpplay.cn
   - DOMAIN-SUFFIX,adcdn.hpplay.cn
   - DOMAIN-SUFFIX,adeng.hpplay.cn
-  - DOMAIN-SUFFIX,sdkauth.hpplay.cn
-  - DOMAIN-SUFFIX,vipauth.hpplay.cn
+  - DOMAIN-SUFFIX,alog.umeng.com
+  - DOMAIN-SUFFIX,android.bugly.qq.com
+  - DOMAIN-SUFFIX,cdn.hpplay.com.cn
+  - DOMAIN-SUFFIX,conf.hpplay.cn
+  - DOMAIN-SUFFIX,fix.hpplay.cn
+  - DOMAIN-SUFFIX,g.dtv.cn.miaozhen.com
+  - DOMAIN-SUFFIX,gslb.hpplay.cn
+  - DOMAIN-SUFFIX,h5.hpplay.com.cn
   - DOMAIN-SUFFIX,hotupgrade.hpplay.cn
-  #lanlan_mac未知UDP高位端口链接
+  - DOMAIN-SUFFIX,hotupgrade.hpplay.com.cn
+  - DOMAIN-SUFFIX,hpplay.cdn.cibn.cc
+  - DOMAIN-SUFFIX,image.hpplay.cn
+  - DOMAIN-SUFFIX,imdns.hpplay.cn
+  - DOMAIN-SUFFIX,pin.hpplay.cn
+  - DOMAIN-SUFFIX,rp.hpplay.cn
+  - DOMAIN-SUFFIX,sdkauth.hpplay.cn
+  - DOMAIN-SUFFIX,sl.hpplay.cn
+  - DOMAIN-SUFFIX,tvapp.hpplay.cn
+  - DOMAIN-SUFFIX,vipauth.hpplay.cn
+  - DOMAIN-SUFFIX,www.lebo.cn
+
+  # 局域网未知 UDP 高位端口拦截
   - IP-CIDR,122.225.66.0/24,no-resolve
-  #Youtube
-  #- DOMAIN-REGEX,r\d+---sn-aig[a-zA-Z0-9]*\.googlevideo\.com
-  #- DOMAIN-REGEX,r\d+---sn-hp5[a-zA-Z0-9]*\.googlevideo\.com
-  #- DOMAIN-REGEX,r\d+---sn-q4f[a-zA-Z0-9]*\.googlevideo\.com
-  #- DOMAIN-REGEX,r\d+---sn-a5m[a-zA-Z0-9]*\.googlevideo\.com
-  #- DOMAIN-REGEX,r\d+---sn-5hn[a-zA-Z0-9]*\.googlevideo\.com
-  #- DOMAIN-REGEX,r\d+---sn-4g5[a-zA-Z0-9]*\.googlevideo\.com
-  #- DOMAIN-REGEX,r\d+---sn-ogu[a-zA-Z0-9]*\.googlevideo\.com
-  #- DOMAIN-REGEX,r\d+---sn-5go[a-zA-Z0-9]*\.googlevideo\.com
+
+  # YouTube 广告与遥测拦截
+  # - DOMAIN-REGEX,r\d+---sn-4g5[a-zA-Z0-9]*\.googlevideo\.com
+  # - DOMAIN-REGEX,r\d+---sn-5go[a-zA-Z0-9]*\.googlevideo\.com
+  # - DOMAIN-REGEX,r\d+---sn-5hn[a-zA-Z0-9]*\.googlevideo\.com
+  # - DOMAIN-REGEX,r\d+---sn-a5m[a-zA-Z0-9]*\.googlevideo\.com
+  # - DOMAIN-REGEX,r\d+---sn-aig[a-zA-Z0-9]*\.googlevideo\.com
+  # - DOMAIN-REGEX,r\d+---sn-hp5[a-zA-Z0-9]*\.googlevideo\.com
+  # - DOMAIN-REGEX,r\d+---sn-ogu[a-zA-Z0-9]*\.googlevideo\.com
+  # - DOMAIN-REGEX,r\d+---sn-q4f[a-zA-Z0-9]*\.googlevideo\.com
+
