@@ -80,7 +80,7 @@ payload:
   - DOMAIN-SUFFIX,gjfzpt.cn
   - DOMAIN-SUFFIX,jomodns.cn
   - DOMAIN-SUFFIX,kuiniuca.com
-  - DOMAIN-SUFFIX,mcdn.bilivideo.cn
+  #- DOMAIN-SUFFIX,mcdn.bilivideo.cn #影响正常播放
   - DOMAIN-SUFFIX,onethingpcs.com
   - DOMAIN-SUFFIX,p2p.huya.com
   - DOMAIN-SUFFIX,pcdn.xmcdn.com
