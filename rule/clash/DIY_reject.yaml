@@ -254,9 +254,9 @@ payload:
   - DOMAIN,tnc3-aliec2.snssdk.com
   - DOMAIN,tnc3-alisc1.snssdk.com
   - DOMAIN,v6-novelapp.ixigua.com
-  - DOMAIN-SUFFIX,bytedance.com
-  - DOMAIN-SUFFIX,bytegoofy.com
-  - DOMAIN-SUFFIX,byteorge.com
+  #- DOMAIN-SUFFIX,bytedance.com #影响评论加载
+  #- DOMAIN-SUFFIX,bytegoofy.com
+  #- DOMAIN-SUFFIX,byteorge.com
   - DOMAIN-SUFFIX,pglstatp-toutiao.com
   - DOMAIN-WILDCARD,*default.ixigua.com
   - DOMAIN-WILDCARD,*novelapp.ixigua.com
