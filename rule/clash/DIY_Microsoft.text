@@ -1,0 +1,31 @@
+# Microsoft 常用服务
+DOMAIN,api.msn.com
+DOMAIN,assets.msn.com
+DOMAIN,browser.events.data.msn.cn
+DOMAIN,d.docs.live.net
+DOMAIN,login.microsoftonline.com
+DOMAIN,nexusrules.officeapps.live.com
+DOMAIN,proteus-assetstore.azurewebsites.net
+
+# Copilot 与 Bing 搜索
+DOMAIN,copilot.microsoft.com
+DOMAIN,dealczars.bing-shopping.microsoft-falcon.io
+DOMAIN,edgeservices.bing.com
+DOMAIN,gateway.bingviz.microsoftapp.net
+DOMAIN,sapphire.api.microsoftapp.net
+DOMAIN,services.bingapis.com
+DOMAIN,shopping.bing-shopping.microsoft-falcon.io
+DOMAIN,sr.bing.com
+DOMAIN,ssl.bing.com
+DOMAIN,sydney.bing.com
+DOMAIN,th.bing.com
+DOMAIN,www.bing.com
+DOMAIN,www.bingapis.com
+DOMAIN,www2.bing.com
+
+# 其它与未分类
+DOMAIN,edge.microsoft.com
+DOMAIN,functional.events.data.microsoft.com
+DOMAIN,location.microsoft.com
+DOMAIN,self.events.data.microsoft.com
+DOMAIN-SUFFIX,edge.microsoft.com
