@@ -95,8 +95,8 @@ IP-CIDR,169.254.169.254/32,no-resolve
 #AND,((IP-ASN,132203,no-resolve),(NETWORK,UDP,no-resolve),(DST-PORT,3000-3004/8000-8001,no-resolve),no-resolve)
 
 # WeChat IPV6
-#AND,((IP-ASN,139341,no-resolve),(IP-CIDR6,::/0,no-resolve),no-resolve)
-#AND,((IP-ASN,132203,no-resolve),(IP-CIDR6,::/0,no-resolve),no-resolve)
+AND,((IP-ASN,139341,no-resolve),(IP-CIDR6,::/0,no-resolve))
+AND,((IP-ASN,132203,no-resolve),(IP-CIDR6,::/0,no-resolve))
 
 # 腾讯广点通体系
 DOMAIN-SUFFIX,gdtimg.com
