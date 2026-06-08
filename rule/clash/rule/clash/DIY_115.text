@@ -1,4 +1,0 @@
-DOMAIN-SUFFIX,115cdn.com
-DOMAIN-SUFFIX,115cdn.net
-DOMAIN-REGEX,cdnfhn.*\.115\.com
-DOMAIN-REGEX,fhn.*\.oss-enet\.aliyuncs\.com
