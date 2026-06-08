@@ -1,3 +1,6 @@
+AND,((PROCESS-NAME-REGEX,.*wpscloudsvr.*),(DOMAIN-SUFFIX,baidu.com,no-resolve),no-resolve)
+PROCESS-NAME,AdobeCRDaemon,no-resolve
+PROCESS-NAME,AdobeIPCBroker,no-resolve
 PROCESS-NAME-REGEX,.*Adobe.*Crash.*
 PROCESS-NAME-REGEX,.*Adobe.*Photoshop.*
 PROCESS-NAME-REGEX,.*App Cleaner.*
@@ -10,20 +13,16 @@ PROCESS-NAME-REGEX,.*GoogleSoftwareUpdate.*
 PROCESS-NAME-REGEX,.*GoogleUpdate.*
 PROCESS-NAME-REGEX,.*Microsoft.*Update.*
 PROCESS-NAME-REGEX,.*Neural.*Mix.*Pro
-PROCESS-NAME-REGEX,.*Paste.*
 PROCESS-NAME-REGEX,.*PPDuck.*
+PROCESS-NAME-REGEX,.*Paste.*
 PROCESS-NAME-REGEX,.*Sound.*Studio
 PROCESS-NAME-REGEX,.*SoundSource.*
-PROCESS-NAME-REGEX,.*updater.exe #chrome
 PROCESS-NAME-REGEX,.*Wondershare.*
 PROCESS-NAME-REGEX,.*XLGame.*
+PROCESS-NAME-REGEX,.*updater.exe # chrome
 PROCESS-NAME-REGEX,Pixelmator.*Pro
-PROCESS-NAME,AdobeCRDaemon,no-resolve
-PROCESS-NAME,AdobeIPCBroker,no-resolve
-AND,((PROCESS-NAME-REGEX,.*wpscloudsvr.*),(DOMAIN-SUFFIX,baidu.com,no-resolve),no-resolve)
 
 # FinalShell 拦截
-PROCESS-NAME,FinalShell,no-resolve
 DOMAIN-SUFFIX,backup.www.hostbuf.com
 DOMAIN-SUFFIX,binaryage-leechgate.herokuapp.com
 DOMAIN-SUFFIX,dkys.org
@@ -37,6 +36,7 @@ DOMAIN-SUFFIX,www.wn1998.com
 DOMAIN-SUFFIX,youtusoft.com
 IP-CIDR,5.5.5.5/32,no-resolve
 IP-CIDR,58.247.214.47/32,no-resolve
+PROCESS-NAME,FinalShell,no-resolve
 
 # HDOBox 广告拦截
 DOMAIN-SUFFIX,applovin.com
@@ -56,14 +56,14 @@ DOMAIN-SUFFIX,doubleclick.net
 DOMAIN-SUFFIX,otheve.beacon.qq.com
 
 # 知乎广告与追踪拦截
-# - DOMAIN-REGEX,(103)\.(41)\.(167)\.(237)
-# - DOMAIN-REGEX,(118)\.(89)\.(204)\.(198)
 DOMAIN-WILDCARD,103*41*167*237
 DOMAIN-WILDCARD,118*89*204*198
 IP-CIDR,103.41.167.237/32,no-resolve
 IP-CIDR,118.89.204.198/32,no-resolve
 IP-CIDR6,2402:4e00:1200:ed00:0:9089:6dac:96b6/128,no-resolve
 
+# - DOMAIN-REGEX,(103)\.(41)\.(167)\.(237)
+# - DOMAIN-REGEX,(118)\.(89)\.(204)\.(198)
 # 通用广告平台与追踪
 DOMAIN-SUFFIX,bytescm.com
 DOMAIN-SUFFIX,etoolads.cn
@@ -75,11 +75,14 @@ DOMAIN,pcdn.yximgs.com
 DOMAIN,stun.douyucdn.cn
 DOMAIN,stun.hitv.com
 DOMAIN,stun1.douyucdn.cn
+DOMAIN-REGEX,.*p2p.*douyucdn\.cn
+DOMAIN-REGEX,.*p2p.*qq\.com
+DOMAIN-REGEX,.*pcdn.*biliapi\.net
+DOMAIN-REGEX,.*pcdn.*youku\.com
 DOMAIN-SUFFIX,bsccdn.net
 DOMAIN-SUFFIX,gjfzpt.cn
 DOMAIN-SUFFIX,jomodns.cn
 DOMAIN-SUFFIX,kuiniuca.com
-#- DOMAIN-SUFFIX,mcdn.bilivideo.cn #影响正常播放
 DOMAIN-SUFFIX,onethingpcs.com
 DOMAIN-SUFFIX,p2p.huya.com
 DOMAIN-SUFFIX,pcdn.xmcdn.com
@@ -89,20 +92,15 @@ DOMAIN-SUFFIX,szbdyd.com
 DOMAIN-SUFFIX,tpa-hcdn.iqiyi.com
 DOMAIN-SUFFIX,uhabo.com
 DOMAIN-SUFFIX,xycdn.com
-DOMAIN-REGEX,.*p2p.*douyucdn\.cn
-DOMAIN-REGEX,.*p2p.*qq\.com
-DOMAIN-REGEX,.*pcdn.*biliapi\.net
-DOMAIN-REGEX,.*pcdn.*youku\.com
 
+#- DOMAIN-SUFFIX,mcdn.bilivideo.cn #影响正常播放
 # BT/PT 与迅雷高位端口拦截
 IP-CIDR,79.136.145.175/32,no-resolve
 
 # 其它常用日本服务
-DOMAIN,c.kuaiduizuoye.com # 快对
-DOMAIN,s.pemsrv.com # 秀人网点击会弹出AD网址
-DOMAIN-SUFFIX,hao123.com
-DOMAIN-SUFFIX,ingest.sentry.io
-DOMAIN-SUFFIX,toblog.ctobsnssdk.com # 添加可能会影响快对的访问
+# 快对
+DOMAIN,c.kuaiduizuoye.com
+DOMAIN-SUFFIX,toblog.ctobsnssdk.com
 
 # Windows 系统升级提醒拦截
 DOMAIN-SUFFIX,ntservicepack.microsoft.com
@@ -253,9 +251,6 @@ DOMAIN,sf3-ttcdn-tos.pstatp.com
 DOMAIN,tnc3-aliec2.snssdk.com
 DOMAIN,tnc3-alisc1.snssdk.com
 DOMAIN,v6-novelapp.ixigua.com
-#- DOMAIN-SUFFIX,bytedance.com #影响评论加载
-#- DOMAIN-SUFFIX,bytegoofy.com
-#- DOMAIN-SUFFIX,byteorge.com
 DOMAIN-SUFFIX,pglstatp-toutiao.com
 DOMAIN-WILDCARD,*default.ixigua.com
 DOMAIN-WILDCARD,*novelapp.ixigua.com
@@ -266,6 +261,9 @@ IP-CIDR,180.96.2.114/32,no-resolve
 IP-CIDR,218.94.207.205/32,no-resolve
 IP-CIDR,49.71.37.101/32,no-resolve
 
+#- DOMAIN-SUFFIX,bytedance.com #影响评论加载
+#- DOMAIN-SUFFIX,bytegoofy.com
+#- DOMAIN-SUFFIX,byteorge.com
 # 网易服务与广告追踪拦截
 DOMAIN-SUFFIX,httpdns-sdk.n.netease.com
 DOMAIN-SUFFIX,httpdns.music.163.com
@@ -294,17 +292,17 @@ AND,((PROCESS-NAME-REGEX,.*XTerminal.*),(DOMAIN-SUFFIX,xterminal.cn),no-resolve)
 PROCESS-NAME-REGEX,.*utools.*
 
 # 索尼系统升级拦截
-AND,((SRC-IP-CIDR,192.168.10.125/32,no-resolve),(DOMAIN-SUFFIX,update.biv.sony.tv,    no-resolve),no-resolve)
 AND,((SRC-IP-CIDR,192.168.10.125/32,no-resolve),(DOMAIN-SUFFIX,api.erabu.sony.tv,     no-resolve),no-resolve)
 AND,((SRC-IP-CIDR,192.168.10.125/32,no-resolve),(DOMAIN-SUFFIX,tv-update.sony.com.cn, no-resolve),no-resolve)
+AND,((SRC-IP-CIDR,192.168.10.125/32,no-resolve),(DOMAIN-SUFFIX,update.biv.sony.tv,    no-resolve),no-resolve)
 
 # sony联网网址,疑似远控或CDN
 # - AND,((SRC-IP-CIDR,192.168.10.125/32,no-resolve),(DOMAIN-SUFFIX,sonyyk.v5tv.com,       no-resolve),no-resolve)
 # - AND,((SRC-IP-CIDR,192.168.10.125/32,no-resolve),(DOMAIN-SUFFIX,ndmdhs.com,            no-resolve),no-resolve)
-
 # sony联网地址,疑似广告(知乎/当贝)
 # - AND,((SRC-IP-CIDR,192.168.10.125/32,no-resolve),(DOMAIN-SUFFIX,unpkg.zhimg.com,       no-resolve),no-resolve)
 # - AND,((SRC-IP-CIDR,192.168.10.125/32,no-resolve),(DOMAIN-SUFFIX,zmapi.dangsfly.com,    no-resolve),no-resolve)
+
 
 # 乐播投屏 SDK 与广告拦截
 DOMAIN-SUFFIX,519332DA.rtc.youme.im
@@ -335,6 +333,11 @@ DOMAIN-SUFFIX,www.lebo.cn
 # 局域网未知 UDP 高位端口拦截
 IP-CIDR,122.225.66.0/24,no-resolve
 
+
+# other
+DOMAIN,s.pemsrv.com # 秀人网点击会弹出AD网址
+DOMAIN-SUFFIX,ingest.sentry.io
+
 # YouTube 广告与遥测拦截
 # - DOMAIN-REGEX,r\d+---sn-4g5[a-zA-Z0-9]*\.googlevideo\.com
 # - DOMAIN-REGEX,r\d+---sn-5go[a-zA-Z0-9]*\.googlevideo\.com
@@ -344,3 +347,4 @@ IP-CIDR,122.225.66.0/24,no-resolve
 # - DOMAIN-REGEX,r\d+---sn-hp5[a-zA-Z0-9]*\.googlevideo\.com
 # - DOMAIN-REGEX,r\d+---sn-ogu[a-zA-Z0-9]*\.googlevideo\.com
 # - DOMAIN-REGEX,r\d+---sn-q4f[a-zA-Z0-9]*\.googlevideo\.com
+
