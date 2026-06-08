@@ -1,0 +1,10 @@
+# 回家策略
+IP-CIDR,192.168.1.1/32,no-resolve
+IP-CIDR,192.168.10.0/24,no-resolve
+IP-CIDR,10.255.128.136/32,no-resolve
+IP-CIDR,239.255.255.250/32,no-resolve
+IP-CIDR,10.255.0.0/16,no-resolve
+URL-REGEX,"http:\/\/(192)\.(168)\.(10)\.(1)"
+DOMAIN,loon
+DOMAIN,egern
+DOMAIN,l.o.o.n
