@@ -1,0 +1,27 @@
+# OpenAI 官方服务
+DOMAIN,openaiapi-site.azureedge.net
+DOMAIN,openaicom-api-bdcpf8c6d2e9atf6.z01.azurefd.net
+DOMAIN,openaicom.imgix.net
+DOMAIN,openaicomproductionae4b.blob.core.windows.net
+DOMAIN,production-openaicom-storage.azureedge.net
+DOMAIN-SUFFIX,chat.com
+DOMAIN-SUFFIX,chatgpt.com
+DOMAIN-SUFFIX,chatgpt.livekit.cloud
+DOMAIN-SUFFIX,host.livekit.cloud
+DOMAIN-SUFFIX,oaistatic.com
+DOMAIN-SUFFIX,oaiusercontent.com
+DOMAIN-SUFFIX,openai.com
+DOMAIN-SUFFIX,openai.com.cdn.cloudflare.net
+DOMAIN-SUFFIX,turn.livekit.cloud
+DOMAIN-REGEX,^chatgpt-async-webps-prod-\S+-\d+\.webpubsub\.azure\.com$
+
+# X.AI (Grok) 与其它 AI
+DOMAIN,new.oaifree.com #linux.do_AI
+DOMAIN-SUFFIX,grok.com
+DOMAIN-SUFFIX,x.ai
+
+# 其它与未分类
+DOMAIN,browser-intake-datadoghq.com
+DOMAIN,o33249.ingest.sentry.io
+AND,((DOMAIN-KEYWORD,chatgpt-async-webps-prod-eastus-,no-resolve),(DOMAIN-SUFFIX,webpubsub.azure.com,no-resolve),no-resolve)
+AND,((DOMAIN-KEYWORD,openaicom-api-,no-resolve),(DOMAIN-SUFFIX,azurefd.net,no-resolve),no-resolve)
