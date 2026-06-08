@@ -10,9 +10,9 @@ DOMAIN,th-b.pinduoduo.com
 DOMAIN,meta.pinduoduo.com
 
 # Pikpak 正则
-URL-REGEX,"^dl.*\.mypikpak\.com$"
-URL-REGEX,"^dl.*\.mypikpak\.net$"
-URL-REGEX,"^dl.*\.pikpak\.io$"
+DOMAIN-REGEX,"^dl.*\.mypikpak\.com$"
+DOMAIN-REGEX,"^dl.*\.mypikpak\.net$"
+DOMAIN-REGEX,"^dl.*\.pikpak\.io$"
 
 # HTTP_DNS类
 DOMAIN,dns.weixin.qq.com
@@ -27,11 +27,11 @@ DOMAIN,sgminorshort.wechat.com
 DOMAIN,sgsupport.wechat.com
 DOMAIN,sgquic.wechat.com
 DOMAIN-SUFFIX,weixinbridge.com
-URL-REGEX,"sg.*\.wechat\.com"
-URL-REGEX,"sg.*\.qq\.com"
+DOMAIN-REGEX,"sg.*\.wechat\.com"
+DOMAIN-REGEX,"sg.*\.qq\.com"
 
 # 小红书分流放行
-URL-REGEX,"ros-upload.*\.xiaohongshu\.com"
+DOMAIN-REGEX,"ros-upload.*\.xiaohongshu\.com"
 DOMAIN,ci.xiaohongshu.com
 DOMAIN,miniprogram.xiaohongshu.com
 DOMAIN,pages.xiaohongshu.com
@@ -71,13 +71,13 @@ DOMAIN-SUFFIX,myip.ipip.net
 DOMAIN-SUFFIX,ifconfig.me
 
 # 网易云音乐
-#URL-REGEX,"interface3.*eapi.*playlist.*subscribe"
-#URL-REGEX,"interface3.*eapi.*playlist.*detail"
-#URL-REGEX,"interface3.*eapi.*search"
-#URL-REGEX,"interface3.*eapi.*song.*lyric"
-#URL-REGEX,"interface3.*song.*enhance.*player"
-URL-REGEX,"interface3.*token.*refresh"
-URL-REGEX,"interface3.*radio.*get"
-URL-REGEX,"interface3.*usertool"
-URL-REGEX,"interface3.*weapi.*csrf.*token"
-URL-REGEX,"interface3.*clientcfg"
+#DOMAIN-REGEX,"interface3.*eapi.*playlist.*subscribe"
+#DOMAIN-REGEX,"interface3.*eapi.*playlist.*detail"
+#DOMAIN-REGEX,"interface3.*eapi.*search"
+#DOMAIN-REGEX,"interface3.*eapi.*song.*lyric"
+#DOMAIN-REGEX,"interface3.*song.*enhance.*player"
+DOMAIN-REGEX,"interface3.*token.*refresh"
+DOMAIN-REGEX,"interface3.*radio.*get"
+DOMAIN-REGEX,"interface3.*usertool"
+DOMAIN-REGEX,"interface3.*weapi.*csrf.*token"
+DOMAIN-REGEX,"interface3.*clientcfg"
