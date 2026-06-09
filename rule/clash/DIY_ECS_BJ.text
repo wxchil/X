@@ -9,7 +9,7 @@ DOMAIN-WILDCARD,*fmfmobile.icloud.com.cn
 DOMAIN-WILDCARD,*fmip.icloud.com.cn
 DOMAIN-WILDCARD,*quota.icloud.com.cn
 
-  # apple系列CDN
+# apple系列CDN
 DOMAIN-SUFFIX,alikunlun.net
 DOMAIN-SUFFIX,download.ks-cdn.com
 DOMAIN-SUFFIX,ksyuncdn.com
