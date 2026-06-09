@@ -15,7 +15,8 @@ DOMAIN-WILDCARD,*cloud*telecom*.com
 DOMAIN-WILDCARD,*ctyun*.cn
 DOMAIN-WILDCARD,*cloud*dlife*.cn
 DOMAIN-WILDCARD,*cloud*189*.cn
-DOMAIN-WILDCARD,*upload*189*.cn  
+DOMAIN-WILDCARD,*upload*189*.cn
+DOMAIN-SUFFIX,tjtele.com
 DOMAIN-SUFFIX,ux.21cn.com
 DOMAIN-SUFFIX,v1.ax
 IP-CIDR,216.180.0.0/16,no-resolve
