@@ -15,9 +15,9 @@ DOMAIN,swdist.apple.com
 DOMAIN,swscan.apple.com
 DOMAIN,updates-http.cdn-apple.com
 DOMAIN,updates.cdn-apple.com
-# - DOMAIN,updates.g.aaplimg.com
+#DOMAIN,updates.g.aaplimg.com
 DOMAIN,xp.apple.com
-# - DOMAIN,xp.itunes-apple.com.akadns.net
+#DOMAIN,xp.itunes-apple.com.akadns.net
 DOMAIN-WILDCARD,appldnld*.apple*com
 DOMAIN-WILDCARD,bpapi*.aaplimg*com
 DOMAIN-WILDCARD,gg*.apple*com
