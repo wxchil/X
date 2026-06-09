@@ -44,13 +44,13 @@ DOMAIN-SUFFIX,applvn.com
 DOMAIN-SUFFIX,doubleclick.net
 
 # TikTok 广告拦截
-# - DOMAIN,ads-api.tiktok.com
-# - DOMAIN,ads-sg.tiktok.com
-# - DOMAIN,ads.tiktok.com
-# - DOMAIN,analytics-sg.tiktok.com
-# - DOMAIN,analytics.tiktok.com
-# - DOMAIN,business-api.tiktok.com
-# - DOMAIN,log.byteoversea.com
+#DOMAIN,ads-api.tiktok.com
+#DOMAIN,ads-sg.tiktok.com
+#DOMAIN,ads.tiktok.com
+#DOMAIN,analytics-sg.tiktok.com
+#DOMAIN,analytics.tiktok.com
+#DOMAIN,business-api.tiktok.com
+#DOMAIN,log.byteoversea.com
 
 # 搜狗服务与追踪拦截
 DOMAIN-SUFFIX,otheve.beacon.qq.com
@@ -62,8 +62,8 @@ IP-CIDR,103.41.167.237/32,no-resolve
 IP-CIDR,118.89.204.198/32,no-resolve
 IP-CIDR6,2402:4e00:1200:ed00:0:9089:6dac:96b6/128,no-resolve
 
-# - DOMAIN-REGEX,(103)\.(41)\.(167)\.(237)
-# - DOMAIN-REGEX,(118)\.(89)\.(204)\.(198)
+#DOMAIN-REGEX,(103)\.(41)\.(167)\.(237)
+#DOMAIN-REGEX,(118)\.(89)\.(204)\.(198)
 # 通用广告平台与追踪
 DOMAIN-SUFFIX,bytescm.com
 DOMAIN-SUFFIX,etoolads.cn
@@ -297,11 +297,11 @@ AND,((SRC-IP-CIDR,192.168.10.125/32,no-resolve),(DOMAIN-SUFFIX,tv-update.sony.co
 AND,((SRC-IP-CIDR,192.168.10.125/32,no-resolve),(DOMAIN-SUFFIX,update.biv.sony.tv,    no-resolve),no-resolve)
 
 # sony联网网址,疑似远控或CDN
-# - AND,((SRC-IP-CIDR,192.168.10.125/32,no-resolve),(DOMAIN-SUFFIX,sonyyk.v5tv.com,       no-resolve),no-resolve)
-# - AND,((SRC-IP-CIDR,192.168.10.125/32,no-resolve),(DOMAIN-SUFFIX,ndmdhs.com,            no-resolve),no-resolve)
+#AND,((SRC-IP-CIDR,192.168.10.125/32,no-resolve),(DOMAIN-SUFFIX,sonyyk.v5tv.com,       no-resolve),no-resolve)
+#AND,((SRC-IP-CIDR,192.168.10.125/32,no-resolve),(DOMAIN-SUFFIX,ndmdhs.com,            no-resolve),no-resolve)
 # sony联网地址,疑似广告(知乎/当贝)
-# - AND,((SRC-IP-CIDR,192.168.10.125/32,no-resolve),(DOMAIN-SUFFIX,unpkg.zhimg.com,       no-resolve),no-resolve)
-# - AND,((SRC-IP-CIDR,192.168.10.125/32,no-resolve),(DOMAIN-SUFFIX,zmapi.dangsfly.com,    no-resolve),no-resolve)
+#AND,((SRC-IP-CIDR,192.168.10.125/32,no-resolve),(DOMAIN-SUFFIX,unpkg.zhimg.com,       no-resolve),no-resolve)
+#AND,((SRC-IP-CIDR,192.168.10.125/32,no-resolve),(DOMAIN-SUFFIX,zmapi.dangsfly.com,    no-resolve),no-resolve)
 
 
 # 乐播投屏 SDK 与广告拦截
@@ -339,12 +339,12 @@ DOMAIN,s.pemsrv.com # 秀人网点击会弹出AD网址
 DOMAIN-SUFFIX,ingest.sentry.io
 
 # YouTube 广告与遥测拦截
-# - DOMAIN-REGEX,r\d+---sn-4g5[a-zA-Z0-9]*\.googlevideo\.com
-# - DOMAIN-REGEX,r\d+---sn-5go[a-zA-Z0-9]*\.googlevideo\.com
-# - DOMAIN-REGEX,r\d+---sn-5hn[a-zA-Z0-9]*\.googlevideo\.com
-# - DOMAIN-REGEX,r\d+---sn-a5m[a-zA-Z0-9]*\.googlevideo\.com
-# - DOMAIN-REGEX,r\d+---sn-aig[a-zA-Z0-9]*\.googlevideo\.com
-# - DOMAIN-REGEX,r\d+---sn-hp5[a-zA-Z0-9]*\.googlevideo\.com
-# - DOMAIN-REGEX,r\d+---sn-ogu[a-zA-Z0-9]*\.googlevideo\.com
-# - DOMAIN-REGEX,r\d+---sn-q4f[a-zA-Z0-9]*\.googlevideo\.com
+#DOMAIN-REGEX,r\d+---sn-4g5[a-zA-Z0-9]*\.googlevideo\.com
+#DOMAIN-REGEX,r\d+---sn-5go[a-zA-Z0-9]*\.googlevideo\.com
+#DOMAIN-REGEX,r\d+---sn-5hn[a-zA-Z0-9]*\.googlevideo\.com
+#DOMAIN-REGEX,r\d+---sn-a5m[a-zA-Z0-9]*\.googlevideo\.com
+#DOMAIN-REGEX,r\d+---sn-aig[a-zA-Z0-9]*\.googlevideo\.com
+#DOMAIN-REGEX,r\d+---sn-hp5[a-zA-Z0-9]*\.googlevideo\.com
+#DOMAIN-REGEX,r\d+---sn-ogu[a-zA-Z0-9]*\.googlevideo\.com
+#DOMAIN-REGEX,r\d+---sn-q4f[a-zA-Z0-9]*\.googlevideo\.com
 
