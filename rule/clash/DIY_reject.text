@@ -65,7 +65,7 @@ IP-CIDR6,2402:4e00:1200:ed00:0:9089:6dac:96b6/128,no-resolve
 #DOMAIN-REGEX,(103)\.(41)\.(167)\.(237)
 #DOMAIN-REGEX,(118)\.(89)\.(204)\.(198)
 # 通用广告平台与追踪
-DOMAIN-SUFFIX,bytescm.com
+#DOMAIN-SUFFIX,bytescm.com #测试downie下载抖音时会出现这条,拒绝后就下载不了
 DOMAIN-SUFFIX,etoolads.cn
 DOMAIN-SUFFIX,sigmob.cn
 DOMAIN-SUFFIX,tobidad.cn
