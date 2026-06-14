@@ -198,6 +198,7 @@ DOMAIN-SUFFIX,yes.youku.com
 
 # 腾讯软件升级与静默拦截
 DOMAIN-REGEX,dldir.*\.qq\.com
+IP-CIDR,221.238.41.89/32,no-resolve
 
 # 腾讯服务与广告追踪拦截
 DOMAIN-SUFFIX,aegis.qq.com
