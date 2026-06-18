@@ -1,4 +1,5 @@
-# OpenAI 官方服务
+# 参考来源: https://help.openai.com/en/articles/9247338-network-recommendations-for-chatgpt-errors-on-web-and-apps#h_49cdf29f60
+# OpenAI 官方服务 (核心域名)
 DOMAIN,openaiapi-site.azureedge.net
 DOMAIN,openaicom-api-bdcpf8c6d2e9atf6.z01.azurefd.net
 DOMAIN,openaicom.imgix.net
@@ -12,16 +13,44 @@ DOMAIN-SUFFIX,oaistatic.com
 DOMAIN-SUFFIX,oaiusercontent.com
 DOMAIN-SUFFIX,openai.com
 DOMAIN-SUFFIX,openai.com.cdn.cloudflare.net
+# 官方新增
+DOMAIN-SUFFIX,openaimerge.com
 DOMAIN-SUFFIX,turn.livekit.cloud
 DOMAIN-REGEX,^chatgpt-async-webps-prod-\S+-\d+\.webpubsub\.azure\.com$
 
+# OpenAI 官方服务 (依赖、认证、风控与遥测)
+
+# Cloudflare 风控验证
+DOMAIN,challenges.cloudflare.com
+# Apple 验证关联
+DOMAIN,humb.apple.com
+# Stripe 支付组件
+DOMAIN,js.stripe.com
+
+# WorkOS 依赖及登录认证组件
+DOMAIN,workos.imgix.net
+DOMAIN-SUFFIX,workos.com
+DOMAIN-SUFFIX,workoscdn.com
+
+# 邮件服务
+DOMAIN-SUFFIX,ct.sendgrid.net
+# 客服/支持系统及 CDN
+DOMAIN-SUFFIX,intercom.io
+DOMAIN-SUFFIX,intercomcdn.com
+# 遥测与实验分析
+DOMAIN-SUFFIX,oaistatsig.com
+
 # X.AI (Grok) 与其它 AI
-DOMAIN,new.oaifree.com #linux.do_AI
+# linux.do_AI
+DOMAIN,new.oaifree.com
 DOMAIN-SUFFIX,grok.com
 DOMAIN-SUFFIX,x.ai
 
-# 其它与未分类
-DOMAIN,browser-intake-datadoghq.com
+# Sentry 错误上报
+DOMAIN,o207216.ingest.sentry.io
 DOMAIN,o33249.ingest.sentry.io
+
+# 其它与未分类
+DOMAIN-SUFFIX,browser-intake-datadoghq.com
 AND,((DOMAIN-KEYWORD,chatgpt-async-webps-prod-eastus-,no-resolve),(DOMAIN-SUFFIX,webpubsub.azure.com,no-resolve),no-resolve)
 AND,((DOMAIN-KEYWORD,openaicom-api-,no-resolve),(DOMAIN-SUFFIX,azurefd.net,no-resolve),no-resolve)
