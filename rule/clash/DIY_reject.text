@@ -197,7 +197,7 @@ DOMAIN-SUFFIX,wan.youku.com
 DOMAIN-SUFFIX,yes.youku.com
 
 # 腾讯软件升级与静默拦截
-DOMAIN-REGEX,dldir.*\.qq\.com
+#DOMAIN-REGEX,dldir.*\.qq\.com #影响正常安装包下载
 IP-CIDR,221.238.41.89/32,no-resolve
 
 # 腾讯服务与广告追踪拦截
