@@ -2,9 +2,6 @@
 DOMAIN-WILDCARD,*-my.sharepoint.com 
 DOMAIN-SUFFIX,sharepoint-df.com
 
-# Microsoft 网络连接测试补充
-DOMAIN-SUFFIX,msftncsi.com
-
 # Microsoft 常用服务
 DOMAIN,api.msn.com
 DOMAIN,assets.msn.com
