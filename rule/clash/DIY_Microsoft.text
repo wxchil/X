@@ -1,3 +1,9 @@
+# 微软商业版
+DOMAIN-WILDCARD,*-my.sharepoint.com 
+
+# Microsoft 网络连接测试补充
+DOMAIN-SUFFIX,msftncsi.com
+
 # Microsoft 常用服务
 DOMAIN,api.msn.com
 DOMAIN,assets.msn.com
