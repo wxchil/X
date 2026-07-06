@@ -279,7 +279,6 @@ DOMAIN,ad.tingyou.app
 DOMAIN-WILDCARD,*update.fnnas.com
 
 # 公共 HTTPDNS 服务拦截
-DOMAIN-SUFFIX,httpdns.c.cdnhwc2.com
 DOMAIN-SUFFIX,httpdns.pro
 
 # hao123 劫持与推广拦截
