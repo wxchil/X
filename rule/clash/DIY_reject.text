@@ -332,10 +332,15 @@ DOMAIN-SUFFIX,www.lebo.cn
 # 局域网未知 UDP 高位端口拦截
 IP-CIDR,122.225.66.0/24,no-resolve
 
-
 # other
 DOMAIN,s.pemsrv.com # 秀人网点击会弹出AD网址
 DOMAIN-SUFFIX,ingest.sentry.io
+
+# other_260707整理
+DOMAIN-SUFFIX,parktons.com
+DOMAIN-SUFFIX,good73.net
+DOMAIN-SUFFIX,asnet.pw
+DOMAIN-SUFFIX,jfdddy.net
 
 # YouTube 广告与遥测拦截
 #DOMAIN-REGEX,r\d+---sn-4g5[a-zA-Z0-9]*\.googlevideo\.com
