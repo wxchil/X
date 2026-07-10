@@ -1,12 +1,12 @@
 # Apple 软件更新与证书拦截
 PROCESS-NAME,softwareupdated,no-resolve
-DOMAIN-WILDCARD,swdist*apple*com
-DOMAIN-WILDCARD,swscan*apple*com
-DOMAIN-WILDCARD,swcdn*apple*com
-DOMAIN-WILDCARD,xp*apple*com
-DOMAIN-WILDCARD,gdmf*apple*com
-DOMAIN-WILDCARD,mesu*apple*com
-DOMAIN-WILDCARD,updates*cdn*apple*com
+DOMAIN-WILDCARD,*swdist*apple*com
+DOMAIN-WILDCARD,*swscan*apple*com
+DOMAIN-WILDCARD,*swcdn*apple*com
+DOMAIN-WILDCARD,*xp*apple*com
+DOMAIN-WILDCARD,*gdmf*apple*com
+DOMAIN-WILDCARD,*mesu*apple*com
+DOMAIN-WILDCARD,*updates*cdn*apple*com
 # 以下全部注释,因为有的时候会遇到商店图片加载慢,所以将这些注释但保存,留作备用
 #DOMAIN,appldnld.apple.com
 #DOMAIN,bpapi.apple.com
