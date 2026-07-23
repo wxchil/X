@@ -1,4 +1,5 @@
 AND,((PROCESS-NAME-REGEX,.*wpscloudsvr.*),(DOMAIN-SUFFIX,baidu.com,no-resolve),no-resolve)
+AND,((PROCESS-NAME-REGEX,.*antigravity.*),(DOMAIN,storage.googleapis.com,no-resolve),no-resolve)
 PROCESS-NAME,AdobeCRDaemon,no-resolve
 PROCESS-NAME,AdobeIPCBroker,no-resolve
 PROCESS-NAME-REGEX,.*Adobe.*Crash.*
