@@ -20,7 +20,7 @@ PROCESS-NAME-REGEX,.*Sound.*Studio
 PROCESS-NAME-REGEX,.*SoundSource.*
 PROCESS-NAME-REGEX,.*Wondershare.*
 PROCESS-NAME-REGEX,.*XLGame.*
-PROCESS-NAME-REGEX,.*updater.exe # chrome
+PROCESS-NAME-REGEX,.*updater.exe
 PROCESS-NAME-REGEX,Pixelmator.*Pro
 
 # FinalShell 拦截
@@ -333,8 +333,9 @@ DOMAIN-SUFFIX,www.lebo.cn
 # 局域网未知 UDP 高位端口拦截
 IP-CIDR,122.225.66.0/24,no-resolve
 
+# 秀人网点击会弹出AD网址
+DOMAIN,s.pemsrv.com
 # other
-DOMAIN,s.pemsrv.com # 秀人网点击会弹出AD网址
 DOMAIN-SUFFIX,ingest.sentry.io
 
 # other_260707整理
