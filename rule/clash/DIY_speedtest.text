@@ -1,23 +1,23 @@
 PROCESS-NAME,Speedtest,no-resolve
-DOMAIN,down.sandai.net #迅雷网速检测
+DOMAIN,down.sandai.net
 DOMAIN,speed.cloudflare.com
 DOMAIN,speed.dler.io
-DOMAIN,wifiman-stability-test.ubncloud.com #wifiman
-DOMAIN-SUFFIX,cabospeed.com #speedtest
+DOMAIN,wifiman-stability-test.ubncloud.com
+DOMAIN-SUFFIX,cabospeed.com
 DOMAIN-SUFFIX,cordcloud.speedtestcustom.com
 DOMAIN-SUFFIX,fiber.google.com
-DOMAIN-SUFFIX,ioflood.com #speedtest
+DOMAIN-SUFFIX,ioflood.com
 DOMAIN-SUFFIX,laomoe.com
-DOMAIN-SUFFIX,ooklaserver.net #speedtest
-DOMAIN-SUFFIX,orion.cloud #speedtest
+DOMAIN-SUFFIX,ooklaserver.net
+DOMAIN-SUFFIX,orion.cloud
 DOMAIN-SUFFIX,ossweb-img.qq.com
-DOMAIN-SUFFIX,speedtest.net #speedtest
-DOMAIN-SUFFIX,tjtele.com #speedtest
-DOMAIN-SUFFIX,unicomspeedtest.com #speedtest
-DOMAIN-SUFFIX,wifiman.com #wifiman
-DOMAIN-SUFFIX,wifiman.me #wifiman
-DOMAIN-SUFFIX,wifiman.ubncloud.com #wifiman
-DOMAIN-KEYWORD,speedtest #speedtest
+DOMAIN-SUFFIX,speedtest.net
+DOMAIN-SUFFIX,tjtele.com
+DOMAIN-SUFFIX,unicomspeedtest.com
+DOMAIN-SUFFIX,wifiman.com
+DOMAIN-SUFFIX,wifiman.me
+DOMAIN-SUFFIX,wifiman.ubncloud.com
+DOMAIN-KEYWORD,speedtest
 
 # https://kelee.one/Tool/Clash/Rule/SpeedtestChina.yaml
 DOMAIN,4gsuzhou1.speedtest.jsinfo.net
