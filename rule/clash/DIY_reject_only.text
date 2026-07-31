@@ -1,11 +1,11 @@
 # 常见HTTPDNS
 DOMAIN-WILDCARD,*dns*wechat*com*
 DOMAIN-WILDCARD,*dns*weixin*qq*com*
-DOMAIN-WILDCARD,*dns.baidu.com,no-resolve
-DOMAIN-WILDCARD,*httpdns*,no-resolve
-DOMAIN-WILDCARD,dns*jd*com,no-resolve
-DOMAIN-WILDCARD,dns*weibo*cn,no-resolve
-DOMAIN-WILDCARD,dns.weixin.qq.com*,no-resolve
+DOMAIN-WILDCARD,*dns.baidu.com*
+DOMAIN-WILDCARD,*httpdns*
+DOMAIN-WILDCARD,*dns*jd*com*
+DOMAIN-WILDCARD,*dns*weibo*cn*
+DOMAIN-WILDCARD,*dns.weixin.qq.com*
 IP-CIDR,101.124.19.122/32,no-resolve
 IP-CIDR,101.91.140.124/32,no-resolve
 IP-CIDR,101.91.140.224/32,no-resolve
