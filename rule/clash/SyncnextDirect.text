@@ -16,6 +16,7 @@ DOMAIN-WILDCARD,*ctyun*.cn
 DOMAIN-WILDCARD,*cloud*dlife*.cn
 DOMAIN-WILDCARD,*cloud*189*.cn
 DOMAIN-WILDCARD,*upload*189*.cn
+DOMAIN-WILDCARD,*upload*189*.com
 DOMAIN-SUFFIX,tjtele.com
 DOMAIN-SUFFIX,telecomjs.com
 DOMAIN-SUFFIX,ux.21cn.com
