@@ -27,11 +27,6 @@ IP-CIDR,138.199.9.104/32,no-resolve
 DOMAIN-SUFFIX,movie.douban.com
 DOMAIN-SUFFIX,mddcloud.com.cn
 DOMAIN-SUFFIX,aliyundrive.asia
-DOMAIN-SUFFIX,ddys.info
-DOMAIN-SUFFIX,ddys.wiki
-DOMAIN-SUFFIX,ddys.pro
-DOMAIN-SUFFIX,ddys.mov
-DOMAIN-SUFFIX,ddys.art
 DOMAIN-SUFFIX,zh188.net
 DOMAIN-SUFFIX,kczybf.com
 DOMAIN-SUFFIX,mixpanel.com
@@ -44,8 +39,13 @@ DOMAIN-KEYWORD,lzcdn
 DOMAIN-KEYWORD,cdnlz
 DOMAIN-KEYWORD,lz-cdn
 DOMAIN-KEYWORD,default.akamaized.net
+DOMAIN,sdk.alibaba.com.ailbaba.me 
+DOMAIN,vip.ffzyread.com
+DOMAIN,vip.imgffzy.com
 DOMAIN-KEYWORD,vip.ffzy-online
 DOMAIN-KEYWORD,vip.ffzy-play
+DOMAIN-KEYWORD,vip.kuaikan-cdn
+DOMAIN-SUFFIX,bfzycdn.com
 DOMAIN-KEYWORD,ffzyread
 DOMAIN-SUFFIX,kuaikan-api.com
 DOMAIN-SUFFIX,cz.cz01.site
