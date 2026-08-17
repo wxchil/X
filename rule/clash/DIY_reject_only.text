@@ -142,3 +142,11 @@ DOMAIN-SUFFIX,sprig.com
 DOMAIN-SUFFIX,transifex.net
 DOMAIN-SUFFIX,usrpubtrk.com
 DOMAIN-SUFFIX,wikia-services.com
+
+# 微软edge浏览器屏蔽隐私信息采集
+DOMAIN,assets.msn.com
+DOMAIN,c.msn.com
+DOMAIN,pipe.aria.microsoft.cn
+DOMAIN,web.vortex.data.microsoft.cn
+DOMAIN,browser.events.data.msn.cn
+DOMAIN,assets.msn.cn
