@@ -1,1 +1,6 @@
 DOMAIN-SUFFIX,translate.googleapis.com
+
+# 馒头仅API,加入原因为:莫名其妙提示访问过于频繁
+# 由于规则排序问题,没有放在US中,而是放在了google中
+DOMAIN,api.m-team.io
+DOMAIN,api.m-team.cc
