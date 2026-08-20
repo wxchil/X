@@ -144,7 +144,7 @@ DOMAIN-SUFFIX,usrpubtrk.com
 DOMAIN-SUFFIX,wikia-services.com
 
 # 微软edge浏览器屏蔽隐私信息采集
-DOMAIN,assets.msn.com
+#DOMAIN,assets.msn.com这个误杀图片
 DOMAIN,c.msn.com
 DOMAIN,pipe.aria.microsoft.cn
 DOMAIN,web.vortex.data.microsoft.cn
