@@ -1,3 +1,6 @@
+# 测试禁用天翼云盘上传域名的80端口,是否可以防止重复上传的问题
+AND,((DOMAIN-SUFFIX,upload.cloud.189.cn),(DST-PORT,80))
+
 # 常见HTTPDNS
 DOMAIN-WILDCARD,*dns*wechat*com*
 DOMAIN-WILDCARD,*dns*weixin*qq*com*
