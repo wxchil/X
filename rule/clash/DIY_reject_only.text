@@ -50,6 +50,9 @@ IP-CIDR6,2402:4e00:1900:1700:0:9554:1ad9:c3a/128,no-resolve
 IP-CIDR6,2402:db40:5100:1011::5/128,no-resolve
 IP-CIDR6,240e:928:1400:10::25/128,no-resolve
 
+# YaoYao跳绳内网验证域名,测试屏蔽会怎么样
+DOMAIN,www.yaoyaojumprope.com
+
 # 明确的WeChat IP形式HTTPDNS
 IP-CIDR,182.254.116.117/32,no-resolve
 IP-CIDR,182.254.118.119/32,no-resolve
