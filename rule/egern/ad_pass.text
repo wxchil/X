@@ -46,6 +46,9 @@ DOMAIN,httpdns.music.163.com
 DOMAIN,ipv6.music.163.com
 DOMAIN,ipv4.music.163.com
 
+# 京东放行
+URL-REGEX,^http://\w{32}\.jddebug\.com/diagnose\?
+
 # 其它放行
 DOMAIN-SUFFIX,dycv6.dynv6.net
 DOMAIN,music.dycwuxing.eu.org
