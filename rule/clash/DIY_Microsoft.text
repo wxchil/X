@@ -33,3 +33,4 @@ DOMAIN,functional.events.data.microsoft.com
 DOMAIN,location.microsoft.com
 DOMAIN,self.events.data.microsoft.com
 DOMAIN-SUFFIX,edge.microsoft.com
+DOMAIN-SUFFIX,www.clarity.ms
