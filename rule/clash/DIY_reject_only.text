@@ -91,6 +91,9 @@ IP-CIDR,95.161.64.0/20,no-resolve
 #IP-CIDR6,2001:67c:4e8::/48,no-resolve
 #IP-CIDR6,2a0a:f280:203::/48,no-resolve
 
+# telegram_奇怪IP,并不在tg的ip段内,但是有些规则会涵盖他
+IP-CIDR,194.221.250.50/32,no-resolve
+
 # vscode总是访问169.254.169.254
 IP-CIDR,169.254.169.254/32,no-resolve
 
