@@ -50,6 +50,9 @@ IP-CIDR6,2402:4e00:1900:1700:0:9554:1ad9:c3a/128,no-resolve
 IP-CIDR6,2402:db40:5100:1011::5/128,no-resolve
 IP-CIDR6,240e:928:1400:10::25/128,no-resolve
 
+#只用fastly的cdn，试试屏蔽会怎么样
+DOMAIN,vod-fa-aoc.tv.apple.com
+
 # YaoYao跳绳内网验证域名,测试屏蔽会怎么样
 DOMAIN,www.yaoyaojumprope.com
 
