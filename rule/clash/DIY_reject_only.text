@@ -10,6 +10,7 @@ DOMAIN-WILDCARD,*dns*jd*com*
 DOMAIN-WILDCARD,*dns*weibo*cn*
 DOMAIN-WILDCARD,*dns.weixin.qq.com*
 DOMAIN-WILDCARD,mediacloud*.xiaohongshu.com
+DOMAIN-WILDCARD,httpdns.*.163.com
 IP-CIDR,101.124.19.122/32,no-resolve
 IP-CIDR,101.91.140.124/32,no-resolve
 IP-CIDR,101.91.140.224/32,no-resolve
