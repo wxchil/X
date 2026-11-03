@@ -1,5 +1,7 @@
+# 因为找到了停止更新的地方,所以不再使用,避免影响正常的升级需求
+#AND,((PROCESS-NAME-REGEX,.*antigravity.*),(DOMAIN,storage.googleapis.com,no-resolve),no-resolve)
+
 AND,((PROCESS-NAME-REGEX,.*wpscloudsvr.*),(DOMAIN-SUFFIX,baidu.com,no-resolve),no-resolve)
-AND,((PROCESS-NAME-REGEX,.*antigravity.*),(DOMAIN,storage.googleapis.com,no-resolve),no-resolve)
 PROCESS-NAME,AdobeCRDaemon,no-resolve
 PROCESS-NAME,AdobeIPCBroker,no-resolve
 PROCESS-NAME-REGEX,.*Adobe.*Crash.*
