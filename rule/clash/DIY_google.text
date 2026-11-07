@@ -6,3 +6,4 @@ DOMAIN-WILDCARD,kp*.m-team.io
 DOMAIN-WILDCARD,api*.m-team.io
 DOMAIN-WILDCARD,kp*.m-team.cc
 DOMAIN-WILDCARD,api*.m-team.cc
+DOMAIN-WILDCARD,static*.m-team.*
