@@ -351,11 +351,12 @@ IP-CIDR,122.225.66.0/24,no-resolve
 # other
 DOMAIN-SUFFIX,ingest.sentry.io
 
-# other_260707整理
+# other
 DOMAIN-SUFFIX,parktons.com
 DOMAIN-SUFFIX,good73.net
 DOMAIN-SUFFIX,asnet.pw
 DOMAIN-SUFFIX,jfdddy.net
+DOMAIN-SUFFIX,ocsp.digicert.com
 
 # YouTube 广告与遥测拦截
 #DOMAIN-REGEX,r\d+---sn-4g5[a-zA-Z0-9]*\.googlevideo\.com
