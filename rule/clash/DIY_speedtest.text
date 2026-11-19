@@ -18,6 +18,8 @@ DOMAIN-SUFFIX,wifiman.com
 DOMAIN-SUFFIX,wifiman.me
 DOMAIN-SUFFIX,wifiman.ubncloud.com
 DOMAIN-KEYWORD,speedtest
+DOMAIN-WILDCARD,speed*.*.jp
+
 
 # https://kelee.one/Tool/Clash/Rule/SpeedtestChina.yaml
 DOMAIN,4gsuzhou1.speedtest.jsinfo.net
