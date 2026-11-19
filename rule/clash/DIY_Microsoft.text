@@ -10,6 +10,7 @@ DOMAIN,d.docs.live.net
 DOMAIN,login.microsoftonline.com
 DOMAIN,nexusrules.officeapps.live.com
 DOMAIN,proteus-assetstore.azurewebsites.net
+DOMAIN,api.msedgeservices.com
 
 # Copilot 与 Bing 搜索
 DOMAIN,copilot.microsoft.com
