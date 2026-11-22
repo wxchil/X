@@ -3,6 +3,7 @@ DOMAIN,down.sandai.net
 DOMAIN,speed.cloudflare.com
 DOMAIN,speed.dler.io
 DOMAIN,wifiman-stability-test.ubncloud.com
+DOMAIN-SUFFIX,ookla.com
 DOMAIN-SUFFIX,cabospeed.com
 DOMAIN-SUFFIX,cordcloud.speedtestcustom.com
 DOMAIN-SUFFIX,fiber.google.com
