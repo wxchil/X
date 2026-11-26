@@ -20,15 +20,15 @@ DOMAIN,dns.weixin.qq.com
 #DOMAIN,httpdns.music.163.com
 #DOMAIN,httpdns.n.netease.com
 
-# WeChat
-DOMAIN,sglong.wechat.com
-DOMAIN,sgshort.wechat.com
-DOMAIN,sgminorshort.wechat.com
-DOMAIN,sgsupport.wechat.com
-DOMAIN,sgquic.wechat.com
-DOMAIN-SUFFIX,weixinbridge.com
-DOMAIN-REGEX,"sg.*\.wechat\.com"
-DOMAIN-REGEX,"sg.*\.qq\.com"
+# WeChat 放在这次容易混淆,先注释,有必要则直接改到modules_a中
+#DOMAIN,sglong.wechat.com
+#DOMAIN,sgshort.wechat.com
+#DOMAIN,sgminorshort.wechat.com
+#DOMAIN,sgsupport.wechat.com
+#DOMAIN,sgquic.wechat.com
+#DOMAIN-SUFFIX,weixinbridge.com
+#DOMAIN-REGEX,"sg.*\.wechat\.com"
+#DOMAIN-REGEX,"sg.*\.qq\.com"
 
 # 小红书分流放行
 DOMAIN-REGEX,"ros-upload.*\.xiaohongshu\.com"
