@@ -341,7 +341,7 @@ DOMAIN-SUFFIX,tvapp.hpplay.cn
 # 广电牌照方 CIBN 运营合规分发
 DOMAIN-SUFFIX,hpplay.cdn.cibn.cc
 # 屏幕镜像低延时 WebRTC 数据通道（游密）
-DOMAIN-SUFFIX,519332DA.rtc.youme.im
+DOMAIN-SUFFIX,519332da.rtc.youme.im
 
 
 
